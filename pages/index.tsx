@@ -87,10 +87,6 @@ const Home: NextPage = () => {
           </button>
 
           <div className={`${styles.navLinks} ${mobileMenuOpen ? styles.navLinksOpen : ''}`}>
-            <div className={styles.servicesDropdown}>
-              <a href="#services" className={styles.navLink} onClick={() => setMobileMenuOpen(false)}>Services</a>
-            </div>
-            <a href="#about" className={styles.navLink} onClick={() => setMobileMenuOpen(false)}>About</a>
             <a href="#contact" className={styles.navLink} onClick={() => setMobileMenuOpen(false)}>Contact</a>
             <a href="tel:(251)895-9172" className={styles.phoneButton} onClick={() => setMobileMenuOpen(false)}>Call (251) 895-9172</a>
           </div>

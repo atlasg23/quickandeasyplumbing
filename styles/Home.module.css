@@ -20,15 +20,14 @@
 .navContainer {
   max-width: 1400px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 2.5rem;
   gap: 2rem;
 }
 
 .logoSection {
-  grid-column: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,6 +35,8 @@
   position: relative;
   cursor: pointer;
   transition: all 0.3s ease;
+  order: 2;
+  flex: 0 0 auto;
 }
 
 .logoSection:hover {
@@ -92,19 +93,21 @@
 }
 
 .navLinks {
-  grid-column: 3;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 2rem;
+  order: 3;
+  flex: 1;
 }
 
 .navLinksLeft {
-  grid-column: 1;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 2rem;
+  order: 1;
+  flex: 1;
 }
 
 .navLink {

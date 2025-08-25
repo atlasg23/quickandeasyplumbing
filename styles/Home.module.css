@@ -448,18 +448,11 @@
   background: linear-gradient(135deg, #3b82f6, #1d4ed8);
   border-radius: 50%;
   position: relative;
-}
-
-.iconCircle::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 2rem;
-  height: 2rem;
-  background: white;
-  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
 }
 
 .serviceTitle {
@@ -495,6 +488,110 @@
   left: 0;
   color: #3b82f6;
   font-weight: bold;
+}
+
+/* Design Option 2: Minimalist List Style */
+.servicesSection2 {
+  padding: 6rem 0;
+  background: #ffffff;
+}
+
+.servicesGrid2 {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.serviceCard2 {
+  background: transparent;
+  border: none;
+  border-left: 4px solid #3b82f6;
+  border-radius: 0;
+  padding: 2rem 0 2rem 3rem;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+.serviceCard2:hover {
+  border-left-color: #1d4ed8;
+  transform: translateX(10px);
+  background: rgba(59, 130, 246, 0.02);
+}
+
+.serviceCard2 .iconCircle {
+  display: none;
+}
+
+.serviceCard2 .serviceTitle {
+  font-size: 1.8rem;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.serviceCard2 .serviceDescription {
+  font-size: 1.1rem;
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+
+.serviceCard2 .serviceList li::before {
+  content: '→';
+  color: #3b82f6;
+}
+
+/* Design Option 3: Dark Theme with Glowing Cards */
+.servicesSection3 {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+.servicesTitle3 {
+  color: white;
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.servicesSubtitle3 {
+  color: #cbd5e1;
+}
+
+.serviceCard3 {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+.serviceCard3::before {
+  background: linear-gradient(135deg, #60a5fa, #3b82f6, #1d4ed8);
+}
+
+.serviceCard3:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 20px 50px rgba(59, 130, 246, 0.2);
+  transform: translateY(-10px);
+}
+
+.serviceCard3 .serviceTitle {
+  color: #f1f5f9;
+}
+
+.serviceCard3 .serviceDescription {
+  color: #cbd5e1;
+}
+
+.serviceCard3 .serviceList li {
+  color: #e2e8f0;
+}
+
+.serviceCard3 .iconCircle {
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
 
 

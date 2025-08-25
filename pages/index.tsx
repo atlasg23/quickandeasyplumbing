@@ -48,18 +48,14 @@ const Home: NextPage = () => {
       <nav className={styles.navbar}>
         <div className={styles.navContainer}>
           <div className={styles.navLinksLeft}>
-            <div className={styles.servicesDropdown}>
-              <a href="#services" className={styles.navLink}>Services</a>
-              <div className={styles.dropdownMenu}>
-                <a href="#services" className={styles.dropdownItem}>Emergency Repairs</a>
-                <a href="#services" className={styles.dropdownItem}>Bathroom Remodeling</a>
-                <a href="#services" className={styles.dropdownItem}>Kitchen Plumbing</a>
-                <a href="#services" className={styles.dropdownItem}>Water Heater Service</a>
-                <a href="#services" className={styles.dropdownItem}>New Construction</a>
-                <a href="#services" className={styles.dropdownItem}>Sewer & Drain</a>
-              </div>
-            </div>
+            <a href="#services" className={styles.navLink}>Emergency</a>
+            <a href="#services" className={styles.navLink}>Bathroom</a>
+            <a href="#services" className={styles.navLink}>Kitchen</a>
+            <a href="#services" className={styles.navLink}>Water Heater</a>
+            <a href="#services" className={styles.navLink}>New Build</a>
+            <a href="#services" className={styles.navLink}>Sewer</a>
             <a href="#about" className={styles.navLink}>About</a>
+            <a href="tel:(251)895-9172" className={styles.emergencyButton}>🚨 Emergency Call</a>
           </div>
 
           <div className={styles.logoSection} onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
@@ -87,6 +83,8 @@ const Home: NextPage = () => {
           </button>
 
           <div className={`${styles.navLinks} ${mobileMenuOpen ? styles.navLinksOpen : ''}`}>
+            <a href="#services" className={styles.navLink} onClick={() => setMobileMenuOpen(false)}>Services</a>
+            <a href="#about" className={styles.navLink} onClick={() => setMobileMenuOpen(false)}>About</a>
             <a href="#contact" className={styles.navLink} onClick={() => setMobileMenuOpen(false)}>Contact</a>
             <a href="tel:(251)895-9172" className={styles.phoneButton} onClick={() => setMobileMenuOpen(false)}>Call (251) 895-9172</a>
           </div>

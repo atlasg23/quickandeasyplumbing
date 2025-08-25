@@ -32,7 +32,7 @@
 }
 
 .logo {
-  height: 60px;
+  height: 80px;
   width: auto;
   border-radius: 8px;
 }
@@ -87,6 +87,27 @@
 .phoneButton:hover {
   transform: translateY(-1px);
   box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #374151;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+.hamburger:hover span {
+  background: #1e40af;
 }
 
 .hero {
@@ -225,43 +246,70 @@
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .navContainer {
-    flex-direction: column;
-    gap: 0.5rem;
-    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    padding: 1rem;
   }
 
   .logoSection {
-    justify-content: center;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    height: 70px;
   }
 
   .logoText {
-    text-align: center;
+    text-align: left;
   }
 
   .rating {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+  }
+
+  .hamburger {
+    display: flex;
   }
 
   .navLinks {
-    gap: 0.8rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .navLinksOpen {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
   }
 
   .navLink {
-    font-size: 0.85rem;
-    padding: 0.3rem 0.8rem;
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
   .phoneButton {
-    padding: 0.5rem 1rem;
-    font-size: 0.85rem;
-    border-radius: 20px;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    text-align: center;
   }
 
   .hero {
-    margin-top: 120px;
+    margin-top: 100px;
   }
 
   .slideContent {

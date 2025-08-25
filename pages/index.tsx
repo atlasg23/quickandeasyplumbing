@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const slides = [
     {
@@ -14,10 +15,10 @@ const Home: NextPage = () => {
       showLogo: true
     },
     {
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-      title: "Expert Solutions",
-      subtitle: "Reliable service you can trust",
-      buttonText: "View Google Reviews",
+      image: "https://lh3.googleusercontent.com/p/AF1QipNOTjnDnrYbrd9EaG3c-BHjMBmpy0C5cJPVH0U1=s680-w680-h510-rw",
+      title: "Professional Plumbing Excellence",
+      subtitle: "Quality workmanship and reliable service you can count on",
+      buttonText: "★★★★★ See Our Reviews",
       isReviewsButton: true
     },
     {
@@ -56,11 +57,21 @@ const Home: NextPage = () => {
               <div className={styles.rating}>★★★★★ 5.0 Google Reviews</div>
             </div>
           </div>
-          <div className={styles.navLinks}>
-            <a href="#services" className={styles.navLink}>Services</a>
-            <a href="#about" className={styles.navLink}>About</a>
-            <a href="#contact" className={styles.navLink}>Contact</a>
-            <a href="tel:(251)895-9172" className={styles.phoneButton}>Call (251) 895-9172</a>
+          
+          <button 
+            className={styles.hamburger}
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div className={`${styles.navLinks} ${mobileMenuOpen ? styles.navLinksOpen : ''}`}>
+            <a href="#services" className={styles.navLink} onClick={() => setMobileMenuOpen(false)}>Services</a>
+            <a href="#about" className={styles.navLink} onClick={() => setMobileMenuOpen(false)}>About</a>
+            <a href="#contact" className={styles.navLink} onClick={() => setMobileMenuOpen(false)}>Contact</a>
+            <a href="tel:(251)895-9172" className={styles.phoneButton} onClick={() => setMobileMenuOpen(false)}>Call (251) 895-9172</a>
           </div>
         </div>
       </nav>

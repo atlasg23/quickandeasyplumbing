@@ -72,7 +72,7 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-          
+
           <button 
             className={styles.hamburger}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -86,6 +86,7 @@ const Home: NextPage = () => {
             <a href="#services" className={styles.navLink} onClick={() => setMobileMenuOpen(false)}>Services</a>
             <a href="#about" className={styles.navLink} onClick={() => setMobileMenuOpen(false)}>About</a>
             <a href="#contact" className={styles.navLink} onClick={() => setMobileMenuOpen(false)}>Contact</a>
+            <a href="tel:(251)895-9172" className={styles.emergencyButton} onClick={() => setMobileMenuOpen(false)}>🚨 Emergency Call</a>
             <a href="tel:(251)895-9172" className={styles.phoneButton} onClick={() => setMobileMenuOpen(false)}>Call (251) 895-9172</a>
           </div>
         </div>
@@ -171,7 +172,7 @@ const Home: NextPage = () => {
         <div className={styles.servicesContainer}>
           <h2 className={styles.servicesTitle}>Our Services</h2>
           <p className={styles.servicesSubtitle}>Complete plumbing solutions for your home</p>
-          
+
           <div className={styles.servicesGrid}>
             <div className={styles.serviceCard}>
               <div className={styles.serviceIcon}>
@@ -279,7 +280,7 @@ const Home: NextPage = () => {
                   <span>Mobile, AL</span>
                 </div>
               </div>
-              
+
               <div className={styles.reviewCard}>
                 <div className={styles.reviewStars}>★★★★★</div>
                 <p className={styles.reviewText}>
@@ -290,7 +291,7 @@ const Home: NextPage = () => {
                   <span>Daphne, AL</span>
                 </div>
               </div>
-              
+
               <div className={styles.reviewCard}>
                 <div className={styles.reviewStars}>★★★★★</div>
                 <p className={styles.reviewText}>
@@ -310,7 +311,7 @@ const Home: NextPage = () => {
         <div className={styles.serviceAreaContainer}>
           <h2 className={styles.serviceAreaTitle}>Service Areas</h2>
           <p className={styles.serviceAreaSubtitle}>Proudly serving Mobile County and surrounding areas</p>
-          
+
           <div className={styles.serviceAreaContent}>
             <div className={styles.serviceAreaInfo}>
               <div className={styles.cityGrid}>
@@ -360,7 +361,7 @@ const Home: NextPage = () => {
               <p className={styles.contactDescription}>
                 Ready to get your plumbing issues resolved? Fill out the form and we'll get back to you within 24 hours with a free, no-obligation estimate.
               </p>
-              
+
               <div className={styles.contactDetails}>
                 <div className={styles.contactItem}>
                   <div className={styles.contactIcon}>📞</div>

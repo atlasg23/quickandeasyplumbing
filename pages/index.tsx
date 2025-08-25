@@ -245,6 +245,16 @@ const Home: NextPage = () => {
       <section className={styles.reviewsSection}>
         <div className={styles.reviewsContainer}>
           <h2 className={styles.reviewsTitle}>What Our Customers Say</h2>
+          <div className={styles.reviewsButtonContainer}>
+            <a 
+              href="https://www.google.com/search?q=quick+and+easy+plumbing+mobile+al&rlz=1CAGXWE_enUS1166&oq=quick+and+&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIKCAEQLhixAxiABDIGCAIQRRhAMgYIAxBFGDkyBwgEEAAYgAQyEAgFEC4YrwEYxwEYgAQYjgUyBwgGEAAYgAQyBggHEEUYPNIBCDQ2NzdqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#lrd=0x22710e6d2bda2d21:0x4ed56e8bbf32a5a5,1,,,,"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.readMoreReviewsBtn}
+            >
+              📍 Read More Reviews on Google
+            </a>
+          </div>
           <div className={styles.reviewsSlider}>
             <div className={styles.reviewsTrack}>
               <div className={styles.reviewCard}>
@@ -279,6 +289,52 @@ const Home: NextPage = () => {
                   <span>Spanish Fort, AL</span>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.serviceAreaSection}>
+        <div className={styles.serviceAreaContainer}>
+          <h2 className={styles.serviceAreaTitle}>Service Areas</h2>
+          <p className={styles.serviceAreaSubtitle}>Proudly serving Mobile County and surrounding areas</p>
+          
+          <div className={styles.serviceAreaContent}>
+            <div className={styles.serviceAreaInfo}>
+              <div className={styles.cityGrid}>
+                <div className={styles.cityCard}>
+                  <div className={styles.cityIcon}>🏙️</div>
+                  <h3>Mobile</h3>
+                  <p>Downtown, Midtown, Spring Hill</p>
+                </div>
+                <div className={styles.cityCard}>
+                  <div className={styles.cityIcon}>🌊</div>
+                  <h3>Eastern Shore</h3>
+                  <p>Daphne, Spanish Fort, Fairhope</p>
+                </div>
+                <div className={styles.cityCard}>
+                  <div className={styles.cityIcon}>🌲</div>
+                  <h3>West Mobile</h3>
+                  <p>Tillmans Corner, Theodore</p>
+                </div>
+                <div className={styles.cityCard}>
+                  <div className={styles.cityIcon}>🏘️</div>
+                  <h3>North Mobile</h3>
+                  <p>Saraland, Satsuma, Chickasaw</p>
+                </div>
+              </div>
+            </div>
+            <div className={styles.mapContainer}>
+              <iframe
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJe6jp7mNRZm-dAGFAMrSSADU5KwD0vtc&q=Quick+and+Easy+Plumbing,Mobile,AL&zoom=11"
+                width="100%"
+                height="400"
+                style={{ border: 0, borderRadius: '15px' }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Quick & Easy Plumbing Service Area Map"
+              ></iframe>
             </div>
           </div>
         </div>

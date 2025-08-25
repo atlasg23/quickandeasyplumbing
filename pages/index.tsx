@@ -241,6 +241,48 @@ const Home: NextPage = () => {
           </div>
         </div>
       </section>
+
+      <section className={styles.reviewsSection}>
+        <div className={styles.reviewsContainer}>
+          <h2 className={styles.reviewsTitle}>What Our Customers Say</h2>
+          <div className={styles.reviewsSlider}>
+            <div className={styles.reviewsTrack}>
+              <div className={styles.reviewCard}>
+                <div className={styles.reviewStars}>★★★★★</div>
+                <p className={styles.reviewText}>
+                  "Quick & Easy Plumbing saved the day! They responded to my emergency call within an hour and fixed my burst pipe professionally. Excellent service and fair pricing. Highly recommend!"
+                </p>
+                <div className={styles.reviewAuthor}>
+                  <strong>Sarah Johnson</strong>
+                  <span>Mobile, AL</span>
+                </div>
+              </div>
+              
+              <div className={styles.reviewCard}>
+                <div className={styles.reviewStars}>★★★★★</div>
+                <p className={styles.reviewText}>
+                  "Outstanding bathroom remodel! The team was professional, clean, and finished on time. Our new bathroom looks amazing and the plumbing works perfectly. Will definitely use them again!"
+                </p>
+                <div className={styles.reviewAuthor}>
+                  <strong>Mike Rodriguez</strong>
+                  <span>Daphne, AL</span>
+                </div>
+              </div>
+              
+              <div className={styles.reviewCard}>
+                <div className={styles.reviewStars}>★★★★★</div>
+                <p className={styles.reviewText}>
+                  "Reliable, honest, and skilled plumbers. They diagnosed my water heater issue quickly and provided a fair quote. The installation was flawless. These guys know what they're doing!"
+                </p>
+                <div className={styles.reviewAuthor}>
+                  <strong>Jennifer Williams</strong>
+                  <span>Spanish Fort, AL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

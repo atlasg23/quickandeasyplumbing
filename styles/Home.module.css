@@ -198,6 +198,164 @@
   transform: scale(1.1);
 }
 
+/* About Us Option 1 - Professional & Clean */
+.aboutOption1 {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  padding: 5rem 0;
+}
+
+.aboutContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.aboutContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.aboutTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin-bottom: 1.5rem;
+}
+
+.aboutDescription {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
+
+.aboutFeatures {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.featureIcon {
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  background: #3b82f6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.feature h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 0.5rem 0;
+}
+
+.feature p {
+  color: #6b7280;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.aboutImage img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* About Us Option 2 - Personal & Story-driven */
+.aboutOption2 {
+  background: white;
+  padding: 5rem 0;
+}
+
+.aboutHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.aboutTitle2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin-bottom: 1rem;
+}
+
+.aboutSubtitle {
+  font-size: 1.3rem;
+  color: #6b7280;
+  font-weight: 300;
+}
+
+.aboutStory {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.storyImage img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.storyText h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.storyText p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.aboutStats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+  background: #f8fafc;
+  padding: 3rem 2rem;
+  border-radius: 15px;
+}
+
+.stat {
+  padding: 1rem;
+}
+
+.statNumber {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3b82f6;
+  margin-bottom: 0.5rem;
+}
+
+.statLabel {
+  font-size: 1rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
   .navContainer {
@@ -248,5 +406,64 @@
   
   .slideIndicators {
     bottom: 1rem;
+  }
+
+  /* About Us Mobile Styles */
+  .aboutOption1 {
+    padding: 3rem 0;
+  }
+  
+  .aboutContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .aboutTitle {
+    font-size: 2rem;
+  }
+  
+  .aboutDescription {
+    font-size: 1rem;
+  }
+  
+  .aboutFeatures {
+    gap: 1rem;
+  }
+  
+  .feature {
+    text-align: left;
+  }
+  
+  .aboutOption2 {
+    padding: 3rem 0;
+  }
+  
+  .aboutTitle2 {
+    font-size: 2.2rem;
+  }
+  
+  .aboutSubtitle {
+    font-size: 1.1rem;
+  }
+  
+  .aboutStory {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .storyText {
+    text-align: left;
+  }
+  
+  .aboutStats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+  
+  .statNumber {
+    font-size: 2rem;
   }
 }

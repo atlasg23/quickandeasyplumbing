@@ -90,87 +90,112 @@ const Home: NextPage = () => {
         </div>
       </main>
 
-      {/* About Us Option 1 - Professional & Clean */}
+      {/* About Us Option 1 - Minimalist Elegance */}
       <section className={styles.aboutOption1}>
         <div className={styles.aboutContainer}>
-          <div className={styles.aboutContent}>
-            <div className={styles.aboutText}>
-              <h2 className={styles.aboutTitle}>About Quick & Easy Plumbing</h2>
-              <p className={styles.aboutDescription}>
-                With over 15 years of experience serving Mobile, Alabama and surrounding areas, 
-                Quick & Easy Plumbing has built a reputation for reliable, professional service. 
-                We understand that plumbing emergencies don't wait for business hours, which is 
-                why we're available 24/7 to handle your urgent needs.
-              </p>
-              <div className={styles.aboutFeatures}>
-                <div className={styles.feature}>
-                  <div className={styles.featureIcon}>🔧</div>
-                  <h3>Expert Technicians</h3>
-                  <p>Licensed and insured professionals with years of experience</p>
-                </div>
-                <div className={styles.feature}>
-                  <div className={styles.featureIcon}>⚡</div>
-                  <h3>Fast Response</h3>
-                  <p>Emergency service available 24/7 for urgent plumbing needs</p>
-                </div>
-                <div className={styles.feature}>
-                  <div className={styles.featureIcon}>💯</div>
-                  <h3>Quality Guaranteed</h3>
-                  <p>100% satisfaction guarantee on all our work</p>
+          <div className={styles.aboutWrapper}>
+            <div className={styles.aboutIntro}>
+              <span className={styles.aboutLabel}>Excellence in Every Drop</span>
+              <h2 className={styles.aboutTitle}>Crafting Solutions with Precision</h2>
+              <div className={styles.aboutLine}></div>
+            </div>
+            
+            <div className={styles.aboutGrid}>
+              <div className={styles.aboutImageSection}>
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Elegant plumbing work" />
+                <div className={styles.imageOverlay}>
+                  <div className={styles.overlayText}>15+ Years of Mastery</div>
                 </div>
               </div>
-            </div>
-            <div className={styles.aboutImage}>
-              <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Professional plumber at work" />
+              
+              <div className={styles.aboutContent}>
+                <p className={styles.aboutElegantText}>
+                  At Quick & Easy Plumbing, we believe that exceptional service flows from a 
+                  commitment to excellence. Every project is approached with meticulous attention 
+                  to detail and an unwavering dedication to quality that has defined our reputation 
+                  throughout Mobile, Alabama.
+                </p>
+                
+                <div className={styles.elegantFeatures}>
+                  <div className={styles.elegantFeature}>
+                    <div className={styles.elegantIcon}>◆</div>
+                    <div>
+                      <h4>Masterful Craftsmanship</h4>
+                      <p>Precision-driven solutions tailored to your unique needs</p>
+                    </div>
+                  </div>
+                  <div className={styles.elegantFeature}>
+                    <div className={styles.elegantIcon}>◆</div>
+                    <div>
+                      <h4>Immediate Response</h4>
+                      <p>Round-the-clock availability for urgent matters</p>
+                    </div>
+                  </div>
+                  <div className={styles.elegantFeature}>
+                    <div className={styles.elegantIcon}>◆</div>
+                    <div>
+                      <h4>Guaranteed Excellence</h4>
+                      <p>Your complete satisfaction is our highest priority</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* About Us Option 2 - Personal & Story-driven */}
+      {/* About Us Option 2 - Sophisticated Storytelling */}
       <section className={styles.aboutOption2}>
         <div className={styles.aboutContainer}>
-          <div className={styles.aboutHeader}>
-            <h2 className={styles.aboutTitle2}>Meet Your Local Plumbing Experts</h2>
-            <p className={styles.aboutSubtitle}>Family-owned business serving Mobile with pride since 2008</p>
+          <div className={styles.storyHero}>
+            <div className={styles.storyContent}>
+              <h2 className={styles.storyTitle}>Where Tradition Meets Innovation</h2>
+              <p className={styles.storySubtitle}>A legacy of trust, built one connection at a time</p>
+            </div>
+            <div className={styles.storyVisual}>
+              <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Professional expertise" />
+            </div>
           </div>
           
-          <div className={styles.aboutStory}>
-            <div className={styles.storyImage}>
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Friendly plumber" />
-            </div>
+          <div className={styles.storySection}>
             <div className={styles.storyText}>
-              <h3>Our Story</h3>
-              <p>
-                Quick & Easy Plumbing started as a small family business with a simple mission: 
-                provide honest, reliable plumbing services to our neighbors in Mobile. What began 
-                in a garage with just a truck and a toolbox has grown into the area's most trusted 
-                plumbing service.
-              </p>
-              <p>
-                We treat every customer like family because in Mobile, that's who you are. Whether 
-                it's a leaky faucet or a major pipe repair, we bring the same level of care and 
-                expertise to every job.
-              </p>
+              <div className={styles.storyParagraph}>
+                <h3>Our Journey</h3>
+                <p>
+                  From humble beginnings in 2008, Quick & Easy Plumbing emerged from a simple yet 
+                  profound belief: that every home deserves the highest standard of plumbing excellence. 
+                  What started as a vision has evolved into Mobile's premier plumbing service.
+                </p>
+              </div>
+              
+              <div className={styles.storyParagraph}>
+                <h3>Our Philosophy</h3>
+                <p>
+                  We don't just fix pipes—we forge relationships. Each service call is an opportunity 
+                  to demonstrate our commitment to quality, integrity, and the community we proudly 
+                  call home.
+                </p>
+              </div>
             </div>
-          </div>
-
-          <div className={styles.aboutStats}>
-            <div className={styles.stat}>
-              <div className={styles.statNumber}>500+</div>
-              <div className={styles.statLabel}>Happy Customers</div>
-            </div>
-            <div className={styles.stat}>
-              <div className={styles.statNumber}>15+</div>
-              <div className={styles.statLabel}>Years Experience</div>
-            </div>
-            <div className={styles.stat}>
-              <div className={styles.statNumber}>24/7</div>
-              <div className={styles.statLabel}>Emergency Service</div>
-            </div>
-            <div className={styles.stat}>
-              <div className={styles.statNumber}>5★</div>
-              <div className={styles.statLabel}>Google Rating</div>
+            
+            <div className={styles.credentialsGrid}>
+              <div className={styles.credential}>
+                <div className={styles.credNumber}>500+</div>
+                <div className={styles.credLabel}>Satisfied Clients</div>
+              </div>
+              <div className={styles.credential}>
+                <div className={styles.credNumber}>15</div>
+                <div className={styles.credLabel}>Years of Excellence</div>
+              </div>
+              <div className={styles.credential}>
+                <div className={styles.credNumber}>24/7</div>
+                <div className={styles.credLabel}>Emergency Support</div>
+              </div>
+              <div className={styles.credential}>
+                <div className={styles.credNumber}>★★★★★</div>
+                <div className={styles.credLabel}>Perfect Rating</div>
+              </div>
             </div>
           </div>
         </div>

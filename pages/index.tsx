@@ -1,4 +1,3 @@
-
 import type { NextPage } from "next";
 import Head from "next/head";
 import { useState, useEffect } from "react";
@@ -6,7 +5,7 @@ import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  
+
   const slides = [
     {
       image: "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
@@ -24,7 +23,7 @@ const Home: NextPage = () => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 5000);
-    
+
     return () => clearInterval(timer);
   }, [slides.length]);
 
@@ -78,7 +77,7 @@ const Home: NextPage = () => {
             </div>
           ))}
         </div>
-        
+
         <div className={styles.slideIndicators}>
           {slides.map((_, index) => (
             <button
@@ -89,72 +88,6 @@ const Home: NextPage = () => {
           ))}
         </div>
       </main>
-
-      {/* About Us - New Modern Design */}
-      <section className={styles.aboutSection}>
-        <div className={styles.aboutContainer}>
-          <div className={styles.aboutHeader}>
-            <div className={styles.headerBadge}>
-              <span>★★★★★ 5.0 Rating</span>
-              <span>Since 2019</span>
-            </div>
-            <h2 className={styles.aboutMainTitle}>Mobile's Most Trusted Plumbers</h2>
-            <p className={styles.aboutIntro}>
-              From emergency repairs to complete home renovations, we deliver professional plumbing 
-              solutions that Mobile residents rely on.
-            </p>
-          </div>
-
-          <div className={styles.aboutGrid}>
-            <div className={styles.aboutCard}>
-              <div className={styles.cardIcon}>🚨</div>
-              <h3>Emergency Response</h3>
-              <p>24/7 emergency plumbing services when you need us most. Fast response times guaranteed.</p>
-              <div className={styles.cardFooter}>Available Now</div>
-            </div>
-
-            <div className={styles.aboutCard}>
-              <div className={styles.cardIcon}>🏠</div>
-              <h3>Home Remodeling</h3>
-              <p>Complete bathroom and kitchen plumbing renovations with modern fixtures and design.</p>
-              <div className={styles.cardFooter}>Full Service</div>
-            </div>
-
-            <div className={styles.aboutCard}>
-              <div className={styles.cardIcon}>🔧</div>
-              <h3>Repair & Maintenance</h3>
-              <p>Expert diagnosis and repair of leaks, clogs, and all residential plumbing issues.</p>
-              <div className={styles.cardFooter}>Professional</div>
-            </div>
-
-            <div className={styles.aboutCard}>
-              <div className={styles.cardIcon}>🏗️</div>
-              <h3>New Construction</h3>
-              <p>Complete plumbing installation for new homes and commercial construction projects.</p>
-              <div className={styles.cardFooter}>Licensed & Insured</div>
-            </div>
-          </div>
-
-          <div className={styles.statsSection}>
-            <div className={styles.stat}>
-              <div className={styles.statNumber}>500+</div>
-              <div className={styles.statLabel}>Happy Customers</div>
-            </div>
-            <div className={styles.stat}>
-              <div className={styles.statNumber}>5.0</div>
-              <div className={styles.statLabel}>Google Rating</div>
-            </div>
-            <div className={styles.stat}>
-              <div className={styles.statNumber}>5</div>
-              <div className={styles.statLabel}>Years Experience</div>
-            </div>
-            <div className={styles.stat}>
-              <div className={styles.statNumber}>24/7</div>
-              <div className={styles.statLabel}>Emergency Service</div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

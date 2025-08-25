@@ -79,7 +79,7 @@ const Home: NextPage = () => {
               <div className={styles.slideContent}>
                 {slide.showLogo ? (
                   <img 
-                    src="https://lh3.googleusercontent.com/p/AF1QipNhHIe8tLAxmU0z1QubUJSRUp3M_wviwLCGvUvy=s680-w680-h510-rw" 
+                    src="https://lh3.googleusercontent.com/p/AF1QipOZ8O4INdIUxeYhd6Q9YdGG_-Hxj1dcEZ1wg26w=w141-h176-n-k-no-nu" 
                     alt="Quick & Easy Plumbing Logo" 
                     className={styles.heroLogo}
                   />

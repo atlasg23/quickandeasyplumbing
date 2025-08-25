@@ -9,57 +9,78 @@
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  backdrop-filter: blur(20px);
+  border-bottom: 2px solid rgba(59, 130, 246, 0.2);
   z-index: 1000;
-  padding: 1rem 0;
+  padding: 0.75rem 0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 .navContainer {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 2.5rem;
 }
 
 .logoSection {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
+  position: relative;
 }
 
 .logo {
-  height: 80px;
+  height: 65px;
   width: auto;
-  border-radius: 8px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
 }
 
 .logoText {
   display: flex;
   flex-direction: column;
+  gap: 0.3rem;
 }
 
 .companyName {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #1e40af;
+  font-size: 1.8rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #60a5fa, #3b82f6, #2563eb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin: 0;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .rating {
   color: #fbbf24;
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
 }
 
 .phoneNumber {
-  color: #1e40af;
-  font-size: 1rem;
+  color: #e2e8f0;
+  font-size: 1.1rem;
   font-weight: 700;
   margin-bottom: 0.2rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .mobileInfo {
@@ -69,35 +90,85 @@
 .navLinks {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navLink {
-  color: #374151;
+  color: #e2e8f0;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  letter-spacing: 0.3px;
+}
+
+.navLink::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
 }
 
 .navLink:hover {
-  color: #1e40af;
+  color: #60a5fa;
+  background: rgba(59, 130, 246, 0.1);
+  transform: translateY(-1px);
+}
+
+.navLink:hover::before {
+  width: 100%;
 }
 
 .phoneButton {
   background: linear-gradient(135deg, #3b82f6, #1d4ed8);
   color: white;
   text-decoration: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 25px;
-  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1.05rem;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 10px rgba(59, 130, 246, 0.3);
+  box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+.phoneButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.phoneButton:hover::before {
+  left: 100%;
 }
 
 .phoneButton:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(59, 130, 246, 0.6);
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .hamburger {

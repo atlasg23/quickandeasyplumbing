@@ -16,13 +16,15 @@ const Home: NextPage = () => {
     {
       image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
       title: "Expert Solutions",
-      subtitle: "Reliable service you can trust - ★★★★★ 5.0 Google reviews",
-      goldStars: true
+      subtitle: "Reliable service you can trust",
+      stars: "★★★★★ 5.0 Google reviews",
+      buttonText: "Get Free Quote"
     },
     {
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2076&q=80",
-      title: "Construction Plumbing Experts",
-      subtitle: "New builds, renovations, and commercial projects - we do it all"
+      image: "https://lh3.googleusercontent.com/p/AF1QipNhHIe8tLAxmU0z1QubUJSRUp3M_wviwLCGvUvy=s680-w680-h510-rw",
+      title: "Residential Remodeling Experts",
+      subtitle: "Bathroom renovations, kitchen plumbing, and home remodels - we handle it all",
+      buttonText: "Schedule Service"
     }
   ];
 
@@ -84,11 +86,16 @@ const Home: NextPage = () => {
                 ) : (
                   <h1 className={styles.heroTitle}>{slide.title}</h1>
                 )}
-                <p className={`${styles.heroSubtitle} ${slide.showLogo ? styles.heroSubtitleBold : ''} ${slide.goldStars ? styles.goldStars : ''}`}>
+                <p className={`${styles.heroSubtitle} ${styles.heroSubtitleBold}`}>
                   {slide.subtitle}
                 </p>
+                {slide.stars && (
+                  <p className={`${styles.heroSubtitle} ${styles.heroSubtitleBold} ${styles.goldStars}`}>
+                    {slide.stars}
+                  </p>
+                )}
                 <button className={styles.heroButton}>
-                  Call (251) 895-9172
+                  {slide.buttonText || "Call (251) 895-9172"}
                 </button>
               </div>
             </div>

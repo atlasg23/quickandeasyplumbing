@@ -168,6 +168,25 @@
   background: linear-gradient(135deg, #1d4ed8, #1e40af);
 }
 
+.heroLogo {
+  max-width: 300px;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.heroSubtitleBold {
+  font-weight: 600 !important;
+  font-size: clamp(1.3rem, 2.2vw, 1.7rem) !important;
+}
+
+.goldStars {
+  color: #ffd700 !important;
+}
+
 .slideIndicators {
   position: absolute;
   bottom: 2rem;
@@ -245,6 +264,12 @@
   .heroButton {
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
+  }
+
+  .heroLogo {
+    max-width: 250px;
+    max-height: 150px;
+    margin-bottom: 1.5rem;
   }
 
   .slideIndicators {

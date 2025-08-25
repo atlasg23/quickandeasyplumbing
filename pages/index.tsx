@@ -9,13 +9,20 @@ const Home: NextPage = () => {
   const slides = [
     {
       image: "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      title: "Quick & Easy Plumbing",
-      subtitle: "Professional plumbing services in Mobile, Alabama"
+      title: "",
+      subtitle: "Professional Plumbing Services in Mobile & Surrounding Areas",
+      showLogo: true
     },
     {
       image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
       title: "Expert Solutions",
-      subtitle: "Reliable service you can trust - ★★★★★ 5.0 Google reviews"
+      subtitle: "Reliable service you can trust - ★★★★★ 5.0 Google reviews",
+      goldStars: true
+    },
+    {
+      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2076&q=80",
+      title: "Construction Plumbing Experts",
+      subtitle: "New builds, renovations, and commercial projects - we do it all"
     }
   ];
 
@@ -68,8 +75,18 @@ const Home: NextPage = () => {
               }}
             >
               <div className={styles.slideContent}>
-                <h1 className={styles.heroTitle}>{slide.title}</h1>
-                <p className={styles.heroSubtitle}>{slide.subtitle}</p>
+                {slide.showLogo ? (
+                  <img 
+                    src="https://lh3.googleusercontent.com/p/AF1QipNhHIe8tLAxmU0z1QubUJSRUp3M_wviwLCGvUvy=s680-w680-h510-rw" 
+                    alt="Quick & Easy Plumbing Logo" 
+                    className={styles.heroLogo}
+                  />
+                ) : (
+                  <h1 className={styles.heroTitle}>{slide.title}</h1>
+                )}
+                <p className={`${styles.heroSubtitle} ${slide.showLogo ? styles.heroSubtitleBold : ''} ${slide.goldStars ? styles.goldStars : ''}`}>
+                  {slide.subtitle}
+                </p>
                 <button className={styles.heroButton}>
                   Call (251) 895-9172
                 </button>

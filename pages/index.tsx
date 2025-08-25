@@ -90,91 +90,67 @@ const Home: NextPage = () => {
         </div>
       </main>
 
-      {/* About Us Option 1 - Refined Parallax */}
-      <section className={styles.aboutOption1}>
-        <div className={styles.parallaxContainer}>
-          <div className={styles.parallaxContent}>
-            <div className={styles.contentOverlay}>
-              <div className={styles.aboutWrapper}>
-                <h2 className={styles.aboutTitle}>Excellence Rooted in Experience</h2>
-                <div className={styles.aboutDescription}>
-                  <p>
-                    Quick & Easy Plumbing tackles residential plumbing challenges from leaky faucets to clogged drains, 
-                    complete remodels, and residential construction. Founded in 2019, their experienced plumbers combine 
-                    speedy service with clear communication, keeping your home's plumbing system functional and worry-free.
-                  </p>
-                </div>
-                
-                <div className={styles.serviceHighlights}>
-                  <div className={styles.highlight}>
-                    <div className={styles.highlightIcon}>◉</div>
-                    <span>Emergency Repairs</span>
-                  </div>
-                  <div className={styles.highlight}>
-                    <div className={styles.highlightIcon}>◉</div>
-                    <span>Complete Remodels</span>
-                  </div>
-                  <div className={styles.highlight}>
-                    <div className={styles.highlightIcon}>◉</div>
-                    <span>New Construction</span>
-                  </div>
-                  <div className={styles.highlight}>
-                    <div className={styles.highlightIcon}>◉</div>
-                    <span>Clear Communication</span>
-                  </div>
-                </div>
-              </div>
+      {/* About Us - New Modern Design */}
+      <section className={styles.aboutSection}>
+        <div className={styles.aboutContainer}>
+          <div className={styles.aboutHeader}>
+            <div className={styles.headerBadge}>
+              <span>★★★★★ 5.0 Rating</span>
+              <span>Since 2019</span>
+            </div>
+            <h2 className={styles.aboutMainTitle}>Mobile's Most Trusted Plumbers</h2>
+            <p className={styles.aboutIntro}>
+              From emergency repairs to complete home renovations, we deliver professional plumbing 
+              solutions that Mobile residents rely on.
+            </p>
+          </div>
+
+          <div className={styles.aboutGrid}>
+            <div className={styles.aboutCard}>
+              <div className={styles.cardIcon}>🚨</div>
+              <h3>Emergency Response</h3>
+              <p>24/7 emergency plumbing services when you need us most. Fast response times guaranteed.</p>
+              <div className={styles.cardFooter}>Available Now</div>
+            </div>
+
+            <div className={styles.aboutCard}>
+              <div className={styles.cardIcon}>🏠</div>
+              <h3>Home Remodeling</h3>
+              <p>Complete bathroom and kitchen plumbing renovations with modern fixtures and design.</p>
+              <div className={styles.cardFooter}>Full Service</div>
+            </div>
+
+            <div className={styles.aboutCard}>
+              <div className={styles.cardIcon}>🔧</div>
+              <h3>Repair & Maintenance</h3>
+              <p>Expert diagnosis and repair of leaks, clogs, and all residential plumbing issues.</p>
+              <div className={styles.cardFooter}>Professional</div>
+            </div>
+
+            <div className={styles.aboutCard}>
+              <div className={styles.cardIcon}>🏗️</div>
+              <h3>New Construction</h3>
+              <p>Complete plumbing installation for new homes and commercial construction projects.</p>
+              <div className={styles.cardFooter}>Licensed & Insured</div>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* About Us Option 2 - Clean Modern */}
-      <section className={styles.aboutOption2}>
-        <div className={styles.aboutContainer}>
-          <div className={styles.modernLayout}>
-            <div className={styles.modernContent}>
-              <div className={styles.sectionHeader}>
-                <span className={styles.subtitle}>Since 2019</span>
-                <h2 className={styles.modernTitle}>Professional Plumbing Excellence</h2>
-              </div>
-              
-              <div className={styles.contentGrid}>
-                <div className={styles.mainContent}>
-                  <p className={styles.leadText}>
-                    Quick & Easy Plumbing tackles residential plumbing challenges from leaky faucets 
-                    to clogged drains, complete remodels, and residential construction.
-                  </p>
-                  <p className={styles.bodyText}>
-                    Founded in 2019, our experienced plumbers combine speedy service with clear 
-                    communication, keeping your home's plumbing system functional and worry-free. 
-                    Every project reflects our commitment to quality craftsmanship and customer satisfaction.
-                  </p>
-                </div>
-                
-                <div className={styles.imageFrame}>
-                  <img 
-                    src="https://lh3.googleusercontent.com/p/AF1QipNpiE_fnWWM1IvjPkqzPAz_YkoFivDpJjTZsAAE=s680-w680-h510-rw" 
-                    alt="Quick & Easy Plumbing professional work" 
-                    className={styles.aboutImage}
-                  />
-                </div>
-              </div>
-              
-              <div className={styles.featuresRow}>
-                <div className={styles.feature}>
-                  <h4>Residential Experts</h4>
-                  <p>Specialized in home plumbing systems</p>
-                </div>
-                <div className={styles.feature}>
-                  <h4>Fast Response</h4>
-                  <p>Quick solutions when you need them</p>
-                </div>
-                <div className={styles.feature}>
-                  <h4>Clear Communication</h4>
-                  <p>Transparent service from start to finish</p>
-                </div>
-              </div>
+          <div className={styles.statsSection}>
+            <div className={styles.stat}>
+              <div className={styles.statNumber}>500+</div>
+              <div className={styles.statLabel}>Happy Customers</div>
+            </div>
+            <div className={styles.stat}>
+              <div className={styles.statNumber}>5.0</div>
+              <div className={styles.statLabel}>Google Rating</div>
+            </div>
+            <div className={styles.stat}>
+              <div className={styles.statNumber}>5</div>
+              <div className={styles.statLabel}>Years Experience</div>
+            </div>
+            <div className={styles.stat}>
+              <div className={styles.statNumber}>24/7</div>
+              <div className={styles.statLabel}>Emergency Service</div>
             </div>
           </div>
         </div>

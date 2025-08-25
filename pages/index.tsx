@@ -55,7 +55,7 @@ const Home: NextPage = () => {
             />
             <div className={styles.logoText}>
               <div className={styles.companyName}>Quick & Easy Plumbing</div>
-              <div className={styles.rating}>★★★★★ <span style={{fontSize: '1.2rem'}}>🔍</span></div>
+              <div className={styles.rating}>★★★★★ Google</div>
               <div className={styles.mobileInfo}>
                 <div className={styles.phoneNumber}>(251) 895-9172</div>
               </div>
@@ -78,18 +78,28 @@ const Home: NextPage = () => {
 
           <div className={styles.bottomNavLinks}>
             <div className={styles.servicesDropdown}>
-              <a href="#services" className={styles.navLink}>Services</a>
+              <a href="#services" className={styles.navLink}>Repair</a>
               <div className={styles.dropdownMenu}>
                 <a href="#services" className={styles.dropdownItem}>Emergency Repairs</a>
-                <a href="#services" className={styles.dropdownItem}>Bathroom Remodeling</a>
-                <a href="#services" className={styles.dropdownItem}>Kitchen Plumbing</a>
                 <a href="#services" className={styles.dropdownItem}>Water Heater Service</a>
-                <a href="#services" className={styles.dropdownItem}>New Construction</a>
                 <a href="#services" className={styles.dropdownItem}>Sewer & Drain</a>
               </div>
             </div>
+            <div className={styles.servicesDropdown}>
+              <a href="#services" className={styles.navLink}>Remodel</a>
+              <div className={styles.dropdownMenu}>
+                <a href="#services" className={styles.dropdownItem}>Bathroom Remodeling</a>
+                <a href="#services" className={styles.dropdownItem}>Kitchen Plumbing</a>
+              </div>
+            </div>
+            <div className={styles.servicesDropdown}>
+              <a href="#services" className={styles.navLink}>Construction</a>
+              <div className={styles.dropdownMenu}>
+                <a href="#services" className={styles.dropdownItem}>New Construction</a>
+                <a href="#services" className={styles.dropdownItem}>Rough-in Plumbing</a>
+              </div>
+            </div>
             <a href="#about" className={styles.navLink}>About</a>
-            <a href="#contact" className={styles.navLink}>Contact</a>
           </div>
         </div>
       </nav>

@@ -17,8 +17,8 @@ const Home: NextPage = () => {
       image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
       title: "Expert Solutions",
       subtitle: "Reliable service you can trust",
-      stars: "★★★★★ 5.0 Google reviews",
-      buttonText: "Get Free Quote"
+      buttonText: "View Google Reviews",
+      isReviewsButton: true
     },
     {
       image: "https://lh3.googleusercontent.com/p/AF1QipNhHIe8tLAxmU0z1QubUJSRUp3M_wviwLCGvUvy=s680-w680-h510-rw",
@@ -53,7 +53,6 @@ const Home: NextPage = () => {
               className={styles.logo}
             />
             <div className={styles.logoText}>
-              <h2 className={styles.companyName}>Quick & Easy Plumbing</h2>
               <div className={styles.rating}>★★★★★ 5.0 Google Reviews</div>
             </div>
           </div>
@@ -78,23 +77,14 @@ const Home: NextPage = () => {
             >
               <div className={styles.slideContent}>
                 {slide.showLogo ? (
-                  <img 
-                    src="https://lh3.googleusercontent.com/p/AF1QipOZ8O4INdIUxeYhd6Q9YdGG_-Hxj1dcEZ1wg26w=w141-h176-n-k-no-nu" 
-                    alt="Quick & Easy Plumbing Logo" 
-                    className={styles.heroLogo}
-                  />
+                  <h1 className={styles.heroTitle}>Quick & Easy Plumbing</h1>
                 ) : (
                   <h1 className={styles.heroTitle}>{slide.title}</h1>
                 )}
                 <p className={`${styles.heroSubtitle} ${styles.heroSubtitleBold}`}>
                   {slide.subtitle}
                 </p>
-                {slide.stars && (
-                  <p className={`${styles.heroSubtitle} ${styles.heroSubtitleBold} ${styles.goldStars}`}>
-                    {slide.stars}
-                  </p>
-                )}
-                <button className={styles.heroButton}>
+                <button className={`${styles.heroButton} ${slide.isReviewsButton ? styles.reviewsButton : ''}`}>
                   {slide.buttonText || "Call (251) 895-9172"}
                 </button>
               </div>

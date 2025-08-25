@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       image: "https://lh3.googleusercontent.com/p/AF1QipNOTjnDnrYbrd9EaG3c-BHjMBmpy0C5cJPVH0U1=s680-w680-h510-rw",
       title: "Professional Plumbing Excellence",
       subtitle: "Quality workmanship and reliable service you can count on",
-      buttonText: "★★★★★ See Our Reviews",
+      buttonText: "5-Star Google Reviews",
       isReviewsButton: true
     },
     {
@@ -54,7 +54,10 @@ const Home: NextPage = () => {
               className={styles.logo}
             />
             <div className={styles.logoText}>
-              <div className={styles.rating}>★★★★★ 5.0 Google Reviews</div>
+              <div className={styles.mobileInfo}>
+                <div className={styles.phoneNumber}>(251) 895-9172</div>
+                <div className={styles.rating}>★★★★★ 5.0 Google Reviews</div>
+              </div>
             </div>
           </div>
           

@@ -47,16 +47,32 @@ const Home: NextPage = () => {
 
       <nav className={styles.navbar}>
         <div className={styles.navContainer}>
-          <div className={styles.logoSection}>
+          <div className={styles.navLinksLeft}>
+            <div className={styles.servicesDropdown}>
+              <a href="#services" className={styles.navLink}>Services</a>
+              <div className={styles.dropdownMenu}>
+                <a href="#services" className={styles.dropdownItem}>Emergency Repairs</a>
+                <a href="#services" className={styles.dropdownItem}>Bathroom Remodeling</a>
+                <a href="#services" className={styles.dropdownItem}>Kitchen Plumbing</a>
+                <a href="#services" className={styles.dropdownItem}>Water Heater Service</a>
+                <a href="#services" className={styles.dropdownItem}>New Construction</a>
+                <a href="#services" className={styles.dropdownItem}>Sewer & Drain</a>
+              </div>
+            </div>
+            <a href="#about" className={styles.navLink}>About</a>
+          </div>
+
+          <div className={styles.logoSection} onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
             <img 
               src="https://lh3.googleusercontent.com/p/AF1QipOZ8O4INdIUxeYhd6Q9YdGG_-Hxj1dcEZ1wg26w=w141-h176-n-k-no-nu" 
               alt="Quick & Easy Plumbing Logo" 
               className={styles.logo}
             />
             <div className={styles.logoText}>
+              <div className={styles.companyName}>Quick & Easy Plumbing</div>
+              <div className={styles.rating}>★★★★★ 5.0 Google Reviews</div>
               <div className={styles.mobileInfo}>
                 <div className={styles.phoneNumber}>(251) 895-9172</div>
-                <div className={styles.rating}>★★★★★ 5.0 Google Reviews</div>
               </div>
             </div>
           </div>
@@ -70,8 +86,15 @@ const Home: NextPage = () => {
             <span></span>
           </button>
 
+          <div className={styles.navLinks}>
+            <a href="#contact" className={styles.navLink}>Contact</a>
+            <a href="tel:(251)895-9172" className={styles.phoneButton}>Call (251) 895-9172</a>
+          </div>
+
           <div className={`${styles.navLinks} ${mobileMenuOpen ? styles.navLinksOpen : ''}`}>
-            <a href="#services" className={styles.navLink} onClick={() => setMobileMenuOpen(false)}>Services</a>
+            <div className={styles.servicesDropdown}>
+              <a href="#services" className={styles.navLink} onClick={() => setMobileMenuOpen(false)}>Services</a>
+            </div>
             <a href="#about" className={styles.navLink} onClick={() => setMobileMenuOpen(false)}>About</a>
             <a href="#contact" className={styles.navLink} onClick={() => setMobileMenuOpen(false)}>Contact</a>
             <a href="tel:(251)895-9172" className={styles.phoneButton} onClick={() => setMobileMenuOpen(false)}>Call (251) 895-9172</a>

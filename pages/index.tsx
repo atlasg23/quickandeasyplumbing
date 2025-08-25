@@ -9,14 +9,14 @@ const Home: NextPage = () => {
   
   const slides = [
     {
-      image: "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      title: "Fresh from Alabama Fields",
-      subtitle: "Farm-fresh produce grown with care"
+      image: "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      title: "Quick & Easy Plumbing",
+      subtitle: "Professional plumbing services in Mobile, Alabama"
     },
     {
-      image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-      title: "Sustainably Grown",
-      subtitle: "Quality harvest from Mobile's heartland"
+      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
+      title: "Expert Solutions",
+      subtitle: "Reliable service you can trust - 5.09★ Google reviews"
     }
   ];
 
@@ -31,8 +31,8 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Alabama Farm Fresh - Mobile's Premier Farm</title>
-        <meta name="description" content="Fresh produce from Mobile, Alabama's finest farm" />
+        <title>Quick & Easy Plumbing - Mobile, Alabama | Professional Plumbing Services</title>
+        <meta name="description" content="Professional plumbing services in Mobile, Alabama. Quick & Easy Plumbing - 5.09★ Google reviews. Call (251) 895-9172" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -50,7 +50,7 @@ const Home: NextPage = () => {
                 <h1 className={styles.heroTitle}>{slide.title}</h1>
                 <p className={styles.heroSubtitle}>{slide.subtitle}</p>
                 <button className={styles.heroButton}>
-                  Visit Our Farm
+                  Call (251) 895-9172
                 </button>
               </div>
             </div>

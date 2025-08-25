@@ -320,13 +320,14 @@
 .feature {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  justify-content: center;
   padding: 1.5rem;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
+  text-align: center;
 }
 
 .feature:hover {
@@ -336,20 +337,7 @@
   box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
 }
 
-.featureIcon {
-  font-size: 1.8rem;
-  width: 3.5rem;
-  height: 3.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-  border-radius: 50%;
-  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
-  flex-shrink: 0;
-}
-
-.feature span:last-child {
+.feature span {
   font-size: 1.1rem;
   color: #f1f5f9;
   font-weight: 600;
@@ -386,6 +374,127 @@
 
 .aboutImg:hover {
   transform: scale(1.02);
+}
+
+/* Services Section - Design Option 1: Modern Grid Cards */
+.servicesSection {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  position: relative;
+}
+
+.servicesContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.servicesTitle {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 800;
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.servicesSubtitle {
+  font-size: 1.3rem;
+  color: #64748b;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-weight: 400;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.serviceCard {
+  background: white;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.serviceCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+}
+
+.serviceCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.serviceIcon {
+  margin-bottom: 1.5rem;
+}
+
+.iconCircle {
+  width: 4rem;
+  height: 4rem;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  border-radius: 50%;
+  position: relative;
+}
+
+.iconCircle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2rem;
+  height: 2rem;
+  background: white;
+  border-radius: 4px;
+}
+
+.serviceTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 1rem;
+}
+
+.serviceDescription {
+  font-size: 1rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.serviceList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.serviceList li {
+  padding: 0.5rem 0;
+  color: #475569;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.serviceList li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #3b82f6;
+  font-weight: bold;
 }
 
 
@@ -545,13 +654,7 @@
     padding: 1.2rem;
   }
 
-  .featureIcon {
-    width: 3rem;
-    height: 3rem;
-    font-size: 1.6rem;
-  }
-
-  .feature span:last-child {
+  .feature span {
     font-size: 1rem;
   }
 
@@ -559,8 +662,136 @@
     height: 300px;
   }
 
-  
+  /* Services Section Mobile */
+  .servicesSection {
+    padding: 4rem 0;
+  }
+
+  .servicesGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .serviceCard {
+    padding: 2rem;
+  }
+
+  .servicesTitle {
+    font-size: 2.5rem;
+  }
+
+  .servicesSubtitle {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
 }
+
+/* Alternative Design Option 2: Minimalist List Style */
+/*
+.servicesSection {
+  padding: 6rem 0;
+  background: #ffffff;
+}
+
+.servicesGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.serviceCard {
+  background: transparent;
+  border: none;
+  border-left: 4px solid #3b82f6;
+  border-radius: 0;
+  padding: 2rem 0 2rem 3rem;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+.serviceCard:hover {
+  border-left-color: #1d4ed8;
+  transform: translateX(10px);
+  background: rgba(59, 130, 246, 0.02);
+}
+
+.iconCircle {
+  display: none;
+}
+
+.serviceTitle {
+  font-size: 1.8rem;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.serviceDescription {
+  font-size: 1.1rem;
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+
+.serviceList li::before {
+  content: '→';
+  color: #3b82f6;
+}
+*/
+
+/* Alternative Design Option 3: Dark Theme with Glowing Cards */
+/*
+.servicesSection {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+.servicesTitle {
+  color: white;
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.servicesSubtitle {
+  color: #cbd5e1;
+}
+
+.serviceCard {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+.serviceCard::before {
+  background: linear-gradient(135deg, #60a5fa, #3b82f6, #1d4ed8);
+}
+
+.serviceCard:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(59, 130, 246, 0.3);
+  box-shadow: 0 20px 50px rgba(59, 130, 246, 0.2);
+}
+
+.serviceTitle {
+  color: #f1f5f9;
+}
+
+.serviceDescription {
+  color: #cbd5e1;
+}
+
+.serviceList li {
+  color: #e2e8f0;
+}
+
+.iconCircle {
+  background: linear-gradient(135deg, #60a5fa, #3b82f6);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+*/
 
 
 

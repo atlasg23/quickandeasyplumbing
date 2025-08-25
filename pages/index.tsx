@@ -339,6 +339,197 @@ const Home: NextPage = () => {
           </div>
         </div>
       </section>
+
+      <section id="contact" className={styles.contactSection}>
+        <div className={styles.contactContainer}>
+          <div className={styles.contactContent}>
+            <div className={styles.contactInfo}>
+              <h2 className={styles.contactTitle}>Get Your Free Estimate</h2>
+              <p className={styles.contactDescription}>
+                Ready to get your plumbing issues resolved? Fill out the form and we'll get back to you within 24 hours with a free, no-obligation estimate.
+              </p>
+              
+              <div className={styles.contactDetails}>
+                <div className={styles.contactItem}>
+                  <div className={styles.contactIcon}>📞</div>
+                  <div>
+                    <h4>Call Us Now</h4>
+                    <p>(251) 895-9172</p>
+                  </div>
+                </div>
+                <div className={styles.contactItem}>
+                  <div className={styles.contactIcon}>📧</div>
+                  <div>
+                    <h4>Email Us</h4>
+                    <p>info@quickeasyplumbing.com</p>
+                  </div>
+                </div>
+                <div className={styles.contactItem}>
+                  <div className={styles.contactIcon}>🕒</div>
+                  <div>
+                    <h4>Business Hours</h4>
+                    <p>Mon-Fri: 7AM-7PM<br />Sat: 8AM-5PM<br />Emergency: 24/7</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.contactForm}>
+              <form className={styles.form}>
+                <div className={styles.formRow}>
+                  <div className={styles.formGroup}>
+                    <input 
+                      type="text" 
+                      placeholder="First Name*" 
+                      className={styles.formInput}
+                      required 
+                    />
+                  </div>
+                  <div className={styles.formGroup}>
+                    <input 
+                      type="text" 
+                      placeholder="Last Name*" 
+                      className={styles.formInput}
+                      required 
+                    />
+                  </div>
+                </div>
+
+                <div className={styles.formRow}>
+                  <div className={styles.formGroup}>
+                    <input 
+                      type="tel" 
+                      placeholder="Phone Number*" 
+                      className={styles.formInput}
+                      required 
+                    />
+                  </div>
+                  <div className={styles.formGroup}>
+                    <input 
+                      type="email" 
+                      placeholder="Email Address*" 
+                      className={styles.formInput}
+                      required 
+                    />
+                  </div>
+                </div>
+
+                <div className={styles.formGroup}>
+                  <input 
+                    type="text" 
+                    placeholder="Property Address*" 
+                    className={styles.formInput}
+                    required 
+                  />
+                </div>
+
+                <div className={styles.formGroup}>
+                  <select className={styles.formSelect} required>
+                    <option value="">Select Service Type*</option>
+                    <option value="emergency">Emergency Repair</option>
+                    <option value="bathroom">Bathroom Remodeling</option>
+                    <option value="kitchen">Kitchen Plumbing</option>
+                    <option value="water-heater">Water Heater Service</option>
+                    <option value="new-construction">New Construction</option>
+                    <option value="sewer-drain">Sewer & Drain</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div className={styles.formGroup}>
+                  <textarea 
+                    placeholder="Describe your plumbing needs in detail*" 
+                    className={styles.formTextarea}
+                    rows={5}
+                    required
+                  ></textarea>
+                </div>
+
+                <div className={styles.formGroup}>
+                  <select className={styles.formSelect}>
+                    <option value="">Preferred Contact Time</option>
+                    <option value="morning">Morning (8AM-12PM)</option>
+                    <option value="afternoon">Afternoon (12PM-5PM)</option>
+                    <option value="evening">Evening (5PM-7PM)</option>
+                    <option value="anytime">Anytime</option>
+                  </select>
+                </div>
+
+                <button type="submit" className={styles.submitButton}>
+                  Get My Free Estimate
+                </button>
+
+                <p className={styles.formDisclaimer}>
+                  * Required fields. By submitting this form, you agree to be contacted by Quick & Easy Plumbing regarding your service request.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer className={styles.footer}>
+        <div className={styles.footerContainer}>
+          <div className={styles.footerContent}>
+            <div className={styles.footerSection}>
+              <img 
+                src="https://lh3.googleusercontent.com/p/AF1QipOZ8O4INdIUxeYhd6Q9YdGG_-Hxj1dcEZ1wg26w=w141-h176-n-k-no-nu" 
+                alt="Quick & Easy Plumbing Logo" 
+                className={styles.footerLogo}
+              />
+              <h3>Quick & Easy Plumbing</h3>
+              <p>Professional plumbing services in Mobile, Alabama and surrounding areas since 2019.</p>
+              <div className={styles.footerRating}>
+                ⭐⭐⭐⭐⭐ 5.0 Google Reviews
+              </div>
+            </div>
+
+            <div className={styles.footerSection}>
+              <h4>Services</h4>
+              <ul>
+                <li>Emergency Repairs</li>
+                <li>Bathroom Remodeling</li>
+                <li>Kitchen Plumbing</li>
+                <li>Water Heater Service</li>
+                <li>New Construction</li>
+                <li>Sewer & Drain</li>
+              </ul>
+            </div>
+
+            <div className={styles.footerSection}>
+              <h4>Service Areas</h4>
+              <ul>
+                <li>Mobile, AL</li>
+                <li>Daphne, AL</li>
+                <li>Spanish Fort, AL</li>
+                <li>Fairhope, AL</li>
+                <li>Tillmans Corner, AL</li>
+                <li>Saraland, AL</li>
+              </ul>
+            </div>
+
+            <div className={styles.footerSection}>
+              <h4>Contact Info</h4>
+              <div className={styles.footerContact}>
+                <p>📞 (251) 895-9172</p>
+                <p>📧 info@quickeasyplumbing.com</p>
+                <p>🕒 Mon-Fri: 7AM-7PM</p>
+                <p>🚨 Emergency: 24/7</p>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.footerBottom}>
+            <div className={styles.footerBottomContent}>
+              <p>&copy; 2024 Quick & Easy Plumbing. All rights reserved. | Licensed & Insured</p>
+              <div className={styles.footerLinks}>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };

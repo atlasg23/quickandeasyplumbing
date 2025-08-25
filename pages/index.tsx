@@ -90,53 +90,37 @@ const Home: NextPage = () => {
         </div>
       </main>
 
-      {/* About Us Option 1 - Minimalist Elegance */}
+      {/* About Us Option 1 - Refined Parallax */}
       <section className={styles.aboutOption1}>
-        <div className={styles.aboutContainer}>
-          <div className={styles.aboutWrapper}>
-            <div className={styles.aboutIntro}>
-              <span className={styles.aboutLabel}>Excellence in Every Drop</span>
-              <h2 className={styles.aboutTitle}>Crafting Solutions with Precision</h2>
-              <div className={styles.aboutLine}></div>
-            </div>
-            
-            <div className={styles.aboutGrid}>
-              <div className={styles.aboutImageSection}>
-                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Elegant plumbing work" />
-                <div className={styles.imageOverlay}>
-                  <div className={styles.overlayText}>15+ Years of Mastery</div>
+        <div className={styles.parallaxContainer}>
+          <div className={styles.parallaxContent}>
+            <div className={styles.contentOverlay}>
+              <div className={styles.aboutWrapper}>
+                <h2 className={styles.aboutTitle}>Excellence Rooted in Experience</h2>
+                <div className={styles.aboutDescription}>
+                  <p>
+                    Quick & Easy Plumbing tackles residential plumbing challenges from leaky faucets to clogged drains, 
+                    complete remodels, and residential construction. Founded in 2019, their experienced plumbers combine 
+                    speedy service with clear communication, keeping your home's plumbing system functional and worry-free.
+                  </p>
                 </div>
-              </div>
-              
-              <div className={styles.aboutContent}>
-                <p className={styles.aboutElegantText}>
-                  At Quick & Easy Plumbing, we believe that exceptional service flows from a 
-                  commitment to excellence. Every project is approached with meticulous attention 
-                  to detail and an unwavering dedication to quality that has defined our reputation 
-                  throughout Mobile, Alabama.
-                </p>
                 
-                <div className={styles.elegantFeatures}>
-                  <div className={styles.elegantFeature}>
-                    <div className={styles.elegantIcon}>◆</div>
-                    <div>
-                      <h4>Masterful Craftsmanship</h4>
-                      <p>Precision-driven solutions tailored to your unique needs</p>
-                    </div>
+                <div className={styles.serviceHighlights}>
+                  <div className={styles.highlight}>
+                    <div className={styles.highlightIcon}>◉</div>
+                    <span>Emergency Repairs</span>
                   </div>
-                  <div className={styles.elegantFeature}>
-                    <div className={styles.elegantIcon}>◆</div>
-                    <div>
-                      <h4>Immediate Response</h4>
-                      <p>Round-the-clock availability for urgent matters</p>
-                    </div>
+                  <div className={styles.highlight}>
+                    <div className={styles.highlightIcon}>◉</div>
+                    <span>Complete Remodels</span>
                   </div>
-                  <div className={styles.elegantFeature}>
-                    <div className={styles.elegantIcon}>◆</div>
-                    <div>
-                      <h4>Guaranteed Excellence</h4>
-                      <p>Your complete satisfaction is our highest priority</p>
-                    </div>
+                  <div className={styles.highlight}>
+                    <div className={styles.highlightIcon}>◉</div>
+                    <span>New Construction</span>
+                  </div>
+                  <div className={styles.highlight}>
+                    <div className={styles.highlightIcon}>◉</div>
+                    <span>Clear Communication</span>
                   </div>
                 </div>
               </div>
@@ -145,56 +129,51 @@ const Home: NextPage = () => {
         </div>
       </section>
 
-      {/* About Us Option 2 - Sophisticated Storytelling */}
+      {/* About Us Option 2 - Clean Modern */}
       <section className={styles.aboutOption2}>
         <div className={styles.aboutContainer}>
-          <div className={styles.storyHero}>
-            <div className={styles.storyContent}>
-              <h2 className={styles.storyTitle}>Where Tradition Meets Innovation</h2>
-              <p className={styles.storySubtitle}>A legacy of trust, built one connection at a time</p>
-            </div>
-            <div className={styles.storyVisual}>
-              <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=80" alt="Professional expertise" />
-            </div>
-          </div>
-          
-          <div className={styles.storySection}>
-            <div className={styles.storyText}>
-              <div className={styles.storyParagraph}>
-                <h3>Our Journey</h3>
-                <p>
-                  From humble beginnings in 2008, Quick & Easy Plumbing emerged from a simple yet 
-                  profound belief: that every home deserves the highest standard of plumbing excellence. 
-                  What started as a vision has evolved into Mobile's premier plumbing service.
-                </p>
+          <div className={styles.modernLayout}>
+            <div className={styles.modernContent}>
+              <div className={styles.sectionHeader}>
+                <span className={styles.subtitle}>Since 2019</span>
+                <h2 className={styles.modernTitle}>Professional Plumbing Excellence</h2>
               </div>
               
-              <div className={styles.storyParagraph}>
-                <h3>Our Philosophy</h3>
-                <p>
-                  We don't just fix pipes—we forge relationships. Each service call is an opportunity 
-                  to demonstrate our commitment to quality, integrity, and the community we proudly 
-                  call home.
-                </p>
+              <div className={styles.contentGrid}>
+                <div className={styles.mainContent}>
+                  <p className={styles.leadText}>
+                    Quick & Easy Plumbing tackles residential plumbing challenges from leaky faucets 
+                    to clogged drains, complete remodels, and residential construction.
+                  </p>
+                  <p className={styles.bodyText}>
+                    Founded in 2019, our experienced plumbers combine speedy service with clear 
+                    communication, keeping your home's plumbing system functional and worry-free. 
+                    Every project reflects our commitment to quality craftsmanship and customer satisfaction.
+                  </p>
+                </div>
+                
+                <div className={styles.imageFrame}>
+                  <img 
+                    src="https://lh3.googleusercontent.com/p/AF1QipNpiE_fnWWM1IvjPkqzPAz_YkoFivDpJjTZsAAE=s680-w680-h510-rw" 
+                    alt="Quick & Easy Plumbing professional work" 
+                    className={styles.aboutImage}
+                  />
+                </div>
               </div>
-            </div>
-            
-            <div className={styles.credentialsGrid}>
-              <div className={styles.credential}>
-                <div className={styles.credNumber}>500+</div>
-                <div className={styles.credLabel}>Satisfied Clients</div>
-              </div>
-              <div className={styles.credential}>
-                <div className={styles.credNumber}>15</div>
-                <div className={styles.credLabel}>Years of Excellence</div>
-              </div>
-              <div className={styles.credential}>
-                <div className={styles.credNumber}>24/7</div>
-                <div className={styles.credLabel}>Emergency Support</div>
-              </div>
-              <div className={styles.credential}>
-                <div className={styles.credNumber}>★★★★★</div>
-                <div className={styles.credLabel}>Perfect Rating</div>
+              
+              <div className={styles.featuresRow}>
+                <div className={styles.feature}>
+                  <h4>Residential Experts</h4>
+                  <p>Specialized in home plumbing systems</p>
+                </div>
+                <div className={styles.feature}>
+                  <h4>Fast Response</h4>
+                  <p>Quick solutions when you need them</p>
+                </div>
+                <div className={styles.feature}>
+                  <h4>Clear Communication</h4>
+                  <p>Transparent service from start to finish</p>
+                </div>
               </div>
             </div>
           </div>

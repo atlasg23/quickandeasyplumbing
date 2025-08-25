@@ -116,6 +116,47 @@ const Home: NextPage = () => {
           ))}
         </div>
       </main>
+
+      <section id="about" className={styles.aboutSection}>
+        <div className={styles.aboutContainer}>
+          <div className={styles.aboutContent}>
+            <div className={styles.aboutText}>
+              <h2 className={styles.aboutTitle}>About Quick & Easy Plumbing</h2>
+              <p className={styles.aboutDescription}>
+                Quick & Easy Plumbing specializes in comprehensive residential plumbing solutions, 
+                from simple repairs like leaky faucets and clogged drains to complete home remodels 
+                and new residential construction projects.
+              </p>
+              <p className={styles.aboutDescription}>
+                Established in 2019, our team of skilled professionals delivers prompt, reliable 
+                service with transparent communication. We're committed to keeping your home's 
+                plumbing system running smoothly and efficiently, giving you complete peace of mind.
+              </p>
+              <div className={styles.aboutFeatures}>
+                <div className={styles.feature}>
+                  <span className={styles.featureIcon}>🔧</span>
+                  <span>Expert Repairs & Installations</span>
+                </div>
+                <div className={styles.feature}>
+                  <span className={styles.featureIcon}>🏠</span>
+                  <span>Complete Home Remodels</span>
+                </div>
+                <div className={styles.feature}>
+                  <span className={styles.featureIcon}>⚡</span>
+                  <span>Fast & Reliable Service</span>
+                </div>
+              </div>
+            </div>
+            <div className={styles.aboutImage}>
+              <img 
+                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                alt="Professional plumber at work" 
+                className={styles.aboutImg}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

@@ -296,18 +296,20 @@ const Home: NextPage = () => {
           ></iframe>
           <div className={styles.galleryContainer}>
             <h2 className={styles.galleryTitle}>Gallery</h2>
-            <div className={styles.galleryGrid}>
-              <div className={styles.galleryItem}>
-                <img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-6/485003741_639156525535114_9086182860878260040_n.jpg?stp=c256.0.1536.1536a_dst-jpg_s206x206_tt6&_nc_cat=103&ccb=1-7&_nc_sid=50ad20&_nc_ohc=F9Xi_lfrPUQQ7kNvwE_dIkP&_nc_oc=AdlL7JQiCBitsj8lPe-Ic6Qm8iGfD4zMZQBib-n9j1j9eZJOQdp9oga2abGEot6VrVQ&_nc_zt=23&_nc_ht=scontent-dfw5-1.xx&_nc_gid=OGGEQlAmBNnjeDLUjAaQ2w&oh=00_AfUDPi7Gxpzu9ZVUj0ZxTswDfETECcb_iBa90-mAe0P3AA&oe=68B2EE32" alt="Plumbing Work 1" className={styles.galleryImg} />
-              </div>
-              <div className={styles.galleryItem}>
-                <img src="https://scontent-dfw5-3.xx.fbcdn.net/v/t39.30808-6/484791381_639156528868447_3610978590682047495_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=L7Zvmitj3HkQ7kNvwGXjqH-&_nc_oc=Adm27Soro8YYisjvNvou7i6Dp4efFxOn_NvowZcl3E333JQSCX84G19GZIvCKKoPE8A&_nc_zt=23&_nc_ht=scontent-dfw5-3.xx&_nc_gid=99R1J0VNwztor47PHBXnUA&oh=00_AfVcm26FnYJ2r0Epi4HlSGMEmjy6px2jWoUIv50YLENQfQ&oe=68B2C88A" alt="Plumbing Work 2" className={styles.galleryImg} />
-              </div>
-              <div className={styles.galleryItem}>
-                <img src="https://lh3.googleusercontent.com/p/AF1QipNOTjnDnrYbrd9EaG3c-BHjMBmpy0C5cJPVH0U1=s680-w680-h510-rw" alt="Professional Plumbing Service" className={styles.galleryImg} />
-              </div>
-              <div className={styles.galleryItem}>
-                <img src="https://lh3.googleusercontent.com/p/AF1QipNhHIe8tLAxmU0z1QubUJSRUp3M_wviwLCGvUvy=s680-w680-h510-rw" alt="Bathroom Remodeling" className={styles.galleryImg} />
+            <div className={styles.gallerySlider}>
+              <div className={styles.galleryTrack}>
+                <div className={styles.gallerySlide}>
+                  <img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-6/485003741_639156525535114_9086182860878260040_n.jpg?stp=c256.0.1536.1536a_dst-jpg_s206x206_tt6&_nc_cat=103&ccb=1-7&_nc_sid=50ad20&_nc_ohc=F9Xi_lfrPUQQ7kNvwE_dIkP&_nc_oc=AdlL7JQiCBitsj8lPe-Ic6Qm8iGfD4zMZQBib-n9j1j9eZJOQdp9oga2abGEot6VrVQ&_nc_zt=23&_nc_ht=scontent-dfw5-1.xx&_nc_gid=OGGEQlAmBNnjeDLUjAaQ2w&oh=00_AfUDPi7Gxpzu9ZVUj0ZxTswDfETECcb_iBa90-mAe0P3AA&oe=68B2EE32" alt="Plumbing Work 1" className={styles.galleryImg} />
+                </div>
+                <div className={styles.gallerySlide}>
+                  <img src="https://scontent-dfw5-3.xx.fbcdn.net/v/t39.30808-6/484791381_639156528868447_3610978590682047495_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=L7Zvmitj3HkQ7kNvwGXjqH-&_nc_oc=Adm27Soro8YYisjvNvou7i6Dp4efFxOn_NvowZcl3E333JQSCX84G19GZIvCKKoPE8A&_nc_zt=23&_nc_ht=scontent-dfw5-3.xx&_nc_gid=99R1J0VNwztor47PHBXnUA&oh=00_AfVcm26FnYJ2r0Epi4HlSGMEmjy6px2jWoUIv50YLENQfQ&oe=68B2C88A" alt="Plumbing Work 2" className={styles.galleryImg} />
+                </div>
+                <div className={styles.gallerySlide}>
+                  <img src="https://lh3.googleusercontent.com/p/AF1QipNOTjnDnrYbrd9EaG3c-BHjMBmpy0C5cJPVH0U1=s680-w680-h510-rw" alt="Professional Plumbing Service" className={styles.galleryImg} />
+                </div>
+                <div className={styles.gallerySlide}>
+                  <img src="https://lh3.googleusercontent.com/p/AF1QipNhHIe8tLAxmU0z1QubUJSRUp3M_wviwLCGvUvy=s680-w680-h510-rw" alt="Bathroom Remodeling" className={styles.galleryImg} />
+                </div>
               </div>
             </div>
           </div>
@@ -318,9 +320,9 @@ const Home: NextPage = () => {
         <div className={styles.contactContainer}>
           <div className={styles.contactContent}>
             <div className={styles.contactInfo}>
-              <h2 className={styles.contactTitle}>Get Your Free Estimate</h2>
+              <h2 className={styles.contactTitle}>Request Your Free Estimate</h2>
               <p className={styles.contactDescription}>
-                Ready to get your plumbing issues resolved? Fill out the form and we'll get back to you within 24 hours with a free, no-obligation estimate.
+                Contact Quick & Easy Plumbing today for professional service and reliable solutions. Complete the form below and we'll provide you with a detailed, no-obligation estimate within 24 hours.
               </p>
 
               <div className={styles.contactDetails}>

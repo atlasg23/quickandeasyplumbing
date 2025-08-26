@@ -148,14 +148,7 @@ const Home: NextPage = () => {
             <div className={styles.aboutText}>
               <h2 className={styles.aboutTitle}>About Quick & Easy Plumbing</h2>
               <p className={styles.aboutDescription}>
-                Quick & Easy Plumbing specializes in comprehensive residential plumbing solutions, 
-                from simple repairs like leaky faucets and clogged drains to complete home remodels 
-                and new residential construction projects.
-              </p>
-              <p className={styles.aboutDescription}>
-                Established in 2019, our team of skilled professionals delivers prompt, reliable 
-                service with transparent communication. We're committed to keeping your home's 
-                plumbing system running smoothly and efficiently, giving you complete peace of mind.
+                Since 2019, Quick & Easy Plumbing has specialized in comprehensive residential plumbing solutions - from emergency repairs to complete home remodels and new construction. Our skilled professionals deliver prompt, reliable service with transparent communication and complete peace of mind.
               </p>
             </div>
             <div className={styles.aboutImage}>
@@ -177,7 +170,7 @@ const Home: NextPage = () => {
           <div className={styles.servicesGrid}>
             <div className={styles.serviceCard}>
               <div className={styles.serviceIcon}>
-                <div className={styles.iconCircle}>🚨</div>
+                <div className={styles.iconCircle}>⚡</div>
               </div>
               <h3 className={styles.serviceTitle}>Emergency Repairs</h3>
               <p className={styles.serviceDescription}>24/7 emergency plumbing repairs for leaks, clogs, and burst pipes</p>
@@ -186,11 +179,14 @@ const Home: NextPage = () => {
                 <li>Drain Cleaning</li>
                 <li>Pipe Replacement</li>
               </ul>
+              <button className={styles.readMoreBtn} onClick={() => alert('More details coming soon!')}>
+                Read More
+              </button>
             </div>
 
             <div className={styles.serviceCard}>
               <div className={styles.serviceIcon}>
-                <div className={styles.iconCircle}>🛁</div>
+                <div className={styles.iconCircle}>🚿</div>
               </div>
               <h3 className={styles.serviceTitle}>Bathroom Remodeling</h3>
               <p className={styles.serviceDescription}>Complete bathroom renovations from design to installation</p>
@@ -199,11 +195,14 @@ const Home: NextPage = () => {
                 <li>Tile & Flooring</li>
                 <li>Custom Vanities</li>
               </ul>
+              <button className={styles.readMoreBtn} onClick={() => alert('More details coming soon!')}>
+                Read More
+              </button>
             </div>
 
             <div className={styles.serviceCard}>
               <div className={styles.serviceIcon}>
-                <div className={styles.iconCircle}>🏗️</div>
+                <div className={styles.iconCircle}>🏠</div>
               </div>
               <h3 className={styles.serviceTitle}>New Construction</h3>
               <p className={styles.serviceDescription}>Full plumbing systems for new residential construction</p>
@@ -212,11 +211,14 @@ const Home: NextPage = () => {
                 <li>Water Line Installation</li>
                 <li>Sewer Connection</li>
               </ul>
+              <button className={styles.readMoreBtn} onClick={() => alert('More details coming soon!')}>
+                Read More
+              </button>
             </div>
 
             <div className={styles.serviceCard}>
               <div className={styles.serviceIcon}>
-                <div className={styles.iconCircle}>🔥</div>
+                <div className={styles.iconCircle}>🔧</div>
               </div>
               <h3 className={styles.serviceTitle}>Water Heater Services</h3>
               <p className={styles.serviceDescription}>Installation, repair, and maintenance of water heating systems</p>
@@ -225,11 +227,14 @@ const Home: NextPage = () => {
                 <li>Repair & Maintenance</li>
                 <li>Energy Efficiency Upgrades</li>
               </ul>
+              <button className={styles.readMoreBtn} onClick={() => alert('More details coming soon!')}>
+                Read More
+              </button>
             </div>
 
             <div className={styles.serviceCard}>
               <div className={styles.serviceIcon}>
-                <div className={styles.iconCircle}>🍽️</div>
+                <div className={styles.iconCircle}>🔨</div>
               </div>
               <h3 className={styles.serviceTitle}>Kitchen Plumbing</h3>
               <p className={styles.serviceDescription}>Professional kitchen plumbing for remodels and new installations</p>
@@ -238,11 +243,14 @@ const Home: NextPage = () => {
                 <li>Garbage Disposal</li>
                 <li>Dishwasher Connection</li>
               </ul>
+              <button className={styles.readMoreBtn} onClick={() => alert('More details coming soon!')}>
+                Read More
+              </button>
             </div>
 
             <div className={styles.serviceCard}>
               <div className={styles.serviceIcon}>
-                <div className={styles.iconCircle}>🚰</div>
+                <div className={styles.iconCircle}>🔍</div>
               </div>
               <h3 className={styles.serviceTitle}>Sewer & Drain</h3>
               <p className={styles.serviceDescription}>Complete sewer line and drainage system solutions</p>
@@ -251,6 +259,9 @@ const Home: NextPage = () => {
                 <li>Camera Inspection</li>
                 <li>Hydro Jetting</li>
               </ul>
+              <button className={styles.readMoreBtn} onClick={() => alert('More details coming soon!')}>
+                Read More
+              </button>
             </div>
           </div>
         </div>

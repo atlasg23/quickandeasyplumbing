@@ -237,7 +237,7 @@ const Home: NextPage = () => {
               <div className={styles.reviewCard}>
                 <div className={styles.reviewStars}>★★★★★</div>
                 <p className={styles.reviewText}>
-                  "Quick & Easy Plumbing saved the day! They responded to my emergency call within an hour and fixed my burst pipe professionally. Excellent service and fair pricing. Highly recommend!"
+                  &quot;Quick &amp; Easy Plumbing saved the day! They responded to my emergency call within an hour and fixed my burst pipe professionally. Excellent service and fair pricing. Highly recommend!&quot;
                 </p>
                 <div className={styles.reviewAuthor}>
                   <strong>Sarah Johnson</strong>
@@ -248,7 +248,7 @@ const Home: NextPage = () => {
               <div className={styles.reviewCard}>
                 <div className={styles.reviewStars}>★★★★★</div>
                 <p className={styles.reviewText}>
-                  "Outstanding bathroom remodel! The team was professional, clean, and finished on time. Our new bathroom looks amazing and the plumbing works perfectly. Will definitely use them again!"
+                  &quot;Outstanding bathroom remodel! The team was professional, clean, and finished on time. Our new bathroom looks amazing and the plumbing works perfectly. Will definitely use them again!&quot;
                 </p>
                 <div className={styles.reviewAuthor}>
                   <strong>Mike Rodriguez</strong>
@@ -259,7 +259,7 @@ const Home: NextPage = () => {
               <div className={styles.reviewCard}>
                 <div className={styles.reviewStars}>★★★★★</div>
                 <p className={styles.reviewText}>
-                  "Reliable, honest, and skilled plumbers. They diagnosed my water heater issue quickly and provided a fair quote. The installation was flawless. These guys know what they're doing!"
+                  &quot;Reliable, honest, and skilled plumbers. They diagnosed my water heater issue quickly and provided a fair quote. The installation was flawless. These guys know what they&apos;re doing!&quot;
                 </p>
                 <div className={styles.reviewAuthor}>
                   <strong>Jennifer Williams</strong>
@@ -434,7 +434,7 @@ const Home: NextPage = () => {
                 </button>
 
                 <p className={styles.formDisclaimer}>
-                  * Required fields. By submitting this form, you agree to be contacted by Quick & Easy Plumbing regarding your service request.
+                  * Required fields. By submitting this form, you agree to be contacted by Quick &amp; Easy Plumbing regarding your service request.
                 </p>
               </form>
             </div>

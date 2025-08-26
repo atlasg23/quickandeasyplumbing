@@ -328,22 +328,22 @@ const Home: NextPage = () => {
             <div className={styles.serviceAreaInfo}>
               <div className={styles.cityGrid}>
                 <div className={styles.cityCard}>
-                  <div className={styles.cityIcon}>🏙️</div>
+                  <div className={styles.cityIcon}>MB</div>
                   <h3>Mobile</h3>
                   <p>Downtown, Midtown, Spring Hill</p>
                 </div>
                 <div className={styles.cityCard}>
-                  <div className={styles.cityIcon}>🌊</div>
+                  <div className={styles.cityIcon}>ES</div>
                   <h3>Eastern Shore</h3>
                   <p>Daphne, Spanish Fort, Fairhope</p>
                 </div>
                 <div className={styles.cityCard}>
-                  <div className={styles.cityIcon}>🌲</div>
+                  <div className={styles.cityIcon}>WM</div>
                   <h3>West Mobile</h3>
                   <p>Tillmans Corner, Theodore</p>
                 </div>
                 <div className={styles.cityCard}>
-                  <div className={styles.cityIcon}>🏘️</div>
+                  <div className={styles.cityIcon}>NM</div>
                   <h3>North Mobile</h3>
                   <p>Saraland, Satsuma, Chickasaw</p>
                 </div>

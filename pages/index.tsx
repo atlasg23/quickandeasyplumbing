@@ -193,7 +193,7 @@ const Home: NextPage = () => {
             <div className={styles.serviceItem}>
               <h3>Emergency Repairs</h3>
               <p>24/7 emergency plumbing repairs for leaks, clogs, and burst pipes</p>
-              <button 
+              <button
                 className={styles.serviceReadMoreBtn}
                 onClick={() => alert('Coming Soon!')}
               >
@@ -204,7 +204,7 @@ const Home: NextPage = () => {
             <div className={styles.serviceItem}>
               <h3>Bathroom Remodeling</h3>
               <p>Complete bathroom renovations from design to installation</p>
-              <button 
+              <button
                 className={styles.serviceReadMoreBtn}
                 onClick={() => alert('Coming Soon!')}
               >
@@ -215,7 +215,7 @@ const Home: NextPage = () => {
             <div className={styles.serviceItem}>
               <h3>New Construction</h3>
               <p>Full plumbing systems for new residential construction</p>
-              <button 
+              <button
                 className={styles.serviceReadMoreBtn}
                 onClick={() => alert('Coming Soon!')}
               >
@@ -226,7 +226,7 @@ const Home: NextPage = () => {
             <div className={styles.serviceItem}>
               <h3>Water Heater Services</h3>
               <p>Installation, repair, and maintenance of water heating systems</p>
-              <button 
+              <button
                 className={styles.serviceReadMoreBtn}
                 onClick={() => alert('Coming Soon!')}
               >
@@ -237,7 +237,7 @@ const Home: NextPage = () => {
             <div className={styles.serviceItem}>
               <h3>Kitchen Plumbing</h3>
               <p>Professional kitchen plumbing for remodels and new installations</p>
-              <button 
+              <button
                 className={styles.serviceReadMoreBtn}
                 onClick={() => alert('Coming Soon!')}
               >
@@ -248,7 +248,7 @@ const Home: NextPage = () => {
             <div className={styles.serviceItem}>
               <h3>Sewer & Drain</h3>
               <p>Complete sewer line and drainage system solutions</p>
-              <button 
+              <button
                 className={styles.serviceReadMoreBtn}
                 onClick={() => alert('Coming Soon!')}
               >

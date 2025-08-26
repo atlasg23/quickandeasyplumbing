@@ -1,8 +1,18 @@
+
 import type { NextConfig } from "next";
-import { env } from "process";
 
 const nextConfig: NextConfig = {
-  allowedDevOrigins: [env.REPLIT_DOMAINS.split(",")[0]],
+  // Only add allowedDevOrigins if the environment variable exists
+  ...(process.env.REPLIT_DOMAINS && {
+    allowedDevOrigins: [process.env.REPLIT_DOMAINS.split(",")[0]]
+  }),
+  // Add these for better build compatibility
+  eslint: {
+    ignoreDuringBuilds: false,
+  },
+  typescript: {
+    ignoreBuildErrors: false,
+  },
 };
 
-module.exports = nextConfig;
+export default nextConfig;

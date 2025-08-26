@@ -153,7 +153,7 @@ const Home: NextPage = () => {
             </div>
             <div className={styles.aboutImage}>
               <img 
-                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                src="https://lh3.googleusercontent.com/p/AF1QipNpiE_fnWWM1IvjPkqzPAz_YkoFivDpJjTZsAAE=s680-w680-h510-rw" 
                 alt="Professional plumber at work" 
                 className={styles.aboutImg}
               />
@@ -168,100 +168,34 @@ const Home: NextPage = () => {
           <p className={styles.servicesSubtitle}>Complete plumbing solutions for your home</p>
 
           <div className={styles.servicesGrid}>
-            <div className={styles.serviceCard}>
-              <div className={styles.serviceIcon}>
-                <div className={styles.iconCircle}>⚡</div>
-              </div>
-              <h3 className={styles.serviceTitle}>Emergency Repairs</h3>
-              <p className={styles.serviceDescription}>24/7 emergency plumbing repairs for leaks, clogs, and burst pipes</p>
-              <ul className={styles.serviceList}>
-                <li>Leak Detection & Repair</li>
-                <li>Drain Cleaning</li>
-                <li>Pipe Replacement</li>
-              </ul>
-              <button className={styles.readMoreBtn} onClick={() => alert('More details coming soon!')}>
-                Read More
-              </button>
+            <div className={styles.serviceItem}>
+              <h3>Emergency Repairs</h3>
+              <p>24/7 emergency plumbing repairs for leaks, clogs, and burst pipes</p>
             </div>
 
-            <div className={styles.serviceCard}>
-              <div className={styles.serviceIcon}>
-                <div className={styles.iconCircle}>🚿</div>
-              </div>
-              <h3 className={styles.serviceTitle}>Bathroom Remodeling</h3>
-              <p className={styles.serviceDescription}>Complete bathroom renovations from design to installation</p>
-              <ul className={styles.serviceList}>
-                <li>Fixture Installation</li>
-                <li>Tile & Flooring</li>
-                <li>Custom Vanities</li>
-              </ul>
-              <button className={styles.readMoreBtn} onClick={() => alert('More details coming soon!')}>
-                Read More
-              </button>
+            <div className={styles.serviceItem}>
+              <h3>Bathroom Remodeling</h3>
+              <p>Complete bathroom renovations from design to installation</p>
             </div>
 
-            <div className={styles.serviceCard}>
-              <div className={styles.serviceIcon}>
-                <div className={styles.iconCircle}>🏠</div>
-              </div>
-              <h3 className={styles.serviceTitle}>New Construction</h3>
-              <p className={styles.serviceDescription}>Full plumbing systems for new residential construction</p>
-              <ul className={styles.serviceList}>
-                <li>Rough-in Plumbing</li>
-                <li>Water Line Installation</li>
-                <li>Sewer Connection</li>
-              </ul>
-              <button className={styles.readMoreBtn} onClick={() => alert('More details coming soon!')}>
-                Read More
-              </button>
+            <div className={styles.serviceItem}>
+              <h3>New Construction</h3>
+              <p>Full plumbing systems for new residential construction</p>
             </div>
 
-            <div className={styles.serviceCard}>
-              <div className={styles.serviceIcon}>
-                <div className={styles.iconCircle}>🔧</div>
-              </div>
-              <h3 className={styles.serviceTitle}>Water Heater Services</h3>
-              <p className={styles.serviceDescription}>Installation, repair, and maintenance of water heating systems</p>
-              <ul className={styles.serviceList}>
-                <li>Tankless Installation</li>
-                <li>Repair & Maintenance</li>
-                <li>Energy Efficiency Upgrades</li>
-              </ul>
-              <button className={styles.readMoreBtn} onClick={() => alert('More details coming soon!')}>
-                Read More
-              </button>
+            <div className={styles.serviceItem}>
+              <h3>Water Heater Services</h3>
+              <p>Installation, repair, and maintenance of water heating systems</p>
             </div>
 
-            <div className={styles.serviceCard}>
-              <div className={styles.serviceIcon}>
-                <div className={styles.iconCircle}>🔨</div>
-              </div>
-              <h3 className={styles.serviceTitle}>Kitchen Plumbing</h3>
-              <p className={styles.serviceDescription}>Professional kitchen plumbing for remodels and new installations</p>
-              <ul className={styles.serviceList}>
-                <li>Sink & Faucet Installation</li>
-                <li>Garbage Disposal</li>
-                <li>Dishwasher Connection</li>
-              </ul>
-              <button className={styles.readMoreBtn} onClick={() => alert('More details coming soon!')}>
-                Read More
-              </button>
+            <div className={styles.serviceItem}>
+              <h3>Kitchen Plumbing</h3>
+              <p>Professional kitchen plumbing for remodels and new installations</p>
             </div>
 
-            <div className={styles.serviceCard}>
-              <div className={styles.serviceIcon}>
-                <div className={styles.iconCircle}>🔍</div>
-              </div>
-              <h3 className={styles.serviceTitle}>Sewer & Drain</h3>
-              <p className={styles.serviceDescription}>Complete sewer line and drainage system solutions</p>
-              <ul className={styles.serviceList}>
-                <li>Sewer Line Repair</li>
-                <li>Camera Inspection</li>
-                <li>Hydro Jetting</li>
-              </ul>
-              <button className={styles.readMoreBtn} onClick={() => alert('More details coming soon!')}>
-                Read More
-              </button>
+            <div className={styles.serviceItem}>
+              <h3>Sewer & Drain</h3>
+              <p>Complete sewer line and drainage system solutions</p>
             </div>
           </div>
         </div>

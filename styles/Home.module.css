@@ -576,29 +576,23 @@
   box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
 }
 
-.readMoreContainer {
-  text-align: center;
-  margin-top: 3rem;
-}
-
-.readMoreBtn {
+.serviceReadMoreBtn {
   background: linear-gradient(135deg, #3b82f6, #1d4ed8);
   color: white;
   border: none;
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  border-radius: 25px;
+  border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+  margin-top: 1rem;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
 }
 
-.readMoreBtn:hover {
+.serviceReadMoreBtn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
   background: linear-gradient(135deg, #1d4ed8, #1e40af);
 }
 
@@ -625,6 +619,9 @@
   opacity: 0;
   transform: translateY(30px);
   animation: slideInUp 0.8s ease-out forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .serviceItem:nth-child(1) { animation-delay: 0.1s; }

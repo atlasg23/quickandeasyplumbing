@@ -61,7 +61,7 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-          
+
           <button 
             className={styles.hamburger}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -166,7 +166,7 @@ const Home: NextPage = () => {
         <div className={styles.servicesContainer}>
           <h2 className={styles.servicesTitle}>Our Services</h2>
           <p className={styles.servicesSubtitle}>Complete plumbing solutions for your home</p>
-          
+
           <div className={styles.servicesGrid}>
             <div className={styles.serviceCard}>
               <div className={styles.serviceIcon}>
@@ -270,16 +270,6 @@ const Home: NextPage = () => {
       <section className={styles.reviewsSection}>
         <div className={styles.reviewsContainer}>
           <h2 className={styles.reviewsTitle}>What Our Customers Say</h2>
-          <div className={styles.reviewsButtonContainer}>
-            <a 
-              href="https://www.google.com/search?q=quick+and+easy+plumbing+mobile+al&rlz=1CAGXWE_enUS1166&oq=quick+and+&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIKCAEQLhixAxiABDIGCAIQRRhAMgYIAxBFGDkyBwgEEAAYgAQyEAgFEC4YrwEYxwEYgAQYjgUyBwgGEAAYgAQyBggHEEUYPNIBCDQ2NzdqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#lrd=0x22710e6d2bda2d21:0x4ed56e8bbf32a5a5,1,,,,"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.readMoreReviewsBtn}
-            >
-              📍 Read More Reviews on Google
-            </a>
-          </div>
           <div className={styles.reviewsSlider}>
             <div className={styles.reviewsTrack}>
               <div className={styles.reviewCard}>
@@ -292,7 +282,7 @@ const Home: NextPage = () => {
                   <span>Mobile, AL</span>
                 </div>
               </div>
-              
+
               <div className={styles.reviewCard}>
                 <div className={styles.reviewStars}>★★★★★</div>
                 <p className={styles.reviewText}>
@@ -303,7 +293,7 @@ const Home: NextPage = () => {
                   <span>Daphne, AL</span>
                 </div>
               </div>
-              
+
               <div className={styles.reviewCard}>
                 <div className={styles.reviewStars}>★★★★★</div>
                 <p className={styles.reviewText}>
@@ -316,6 +306,16 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
+          <div className={styles.reviewsButtonContainer}>
+            <a 
+              href="https://www.google.com/search?q=quick+and+easy+plumbing+mobile+al&rlz=1CAGXWE_enUS1166&oq=quick+and+&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIKCAEQLhixAxiABDIGCAIQRRhAMgYIAxBFGDkyBwgEEAAYgAQyEAgFEC4YrwEYxwEYgAQYjgUyBwgGEAAYgAQyBggHEEUYPNIBCDQ2NzdqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#lrd=0x22710e6d2bda2d21:0x4ed56e8bbf32a5a5,1,,,,"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.readMoreReviewsBtn}
+            >
+              📍 Read More Reviews on Google
+            </a>
+          </div>
         </div>
       </section>
 
@@ -323,7 +323,7 @@ const Home: NextPage = () => {
         <div className={styles.serviceAreaContainer}>
           <h2 className={styles.serviceAreaTitle}>Service Areas</h2>
           <p className={styles.serviceAreaSubtitle}>Proudly serving Mobile County and surrounding areas</p>
-          
+
           <div className={styles.serviceAreaContent}>
             <div className={styles.serviceAreaInfo}>
               <div className={styles.cityGrid}>
@@ -373,7 +373,7 @@ const Home: NextPage = () => {
               <p className={styles.contactDescription}>
                 Ready to get your plumbing issues resolved? Fill out the form and we'll get back to you within 24 hours with a free, no-obligation estimate.
               </p>
-              
+
               <div className={styles.contactDetails}>
                 <div className={styles.contactItem}>
                   <div className={styles.contactIcon}>📞</div>

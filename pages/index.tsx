@@ -43,6 +43,19 @@ const Home: NextPage = () => {
         <title>Quick & Easy Plumbing - Mobile, Alabama | Professional Plumbing Services</title>
         <meta name="description" content="Professional plumbing services in Mobile, Alabama. Quick & Easy Plumbing - 5★ Google reviews. Call (251) 895-9172" />
         <link rel="icon" href="/favicon.ico" />
+        
+        {/* Open Graph meta tags for social sharing */}
+        <meta property="og:title" content="Quick & Easy Plumbing - Mobile, Alabama" />
+        <meta property="og:description" content="Professional plumbing services in Mobile, Alabama. Quick & Easy Plumbing - 5★ Google reviews. Call (251) 895-9172" />
+        <meta property="og:image" content="https://lh3.googleusercontent.com/p/AF1QipOZ8O4INdIUxeYhd6Q9YdGG_-Hxj1dcEZ1wg26w=w141-h176-n-k-no-nu" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://your-domain.com" />
+        
+        {/* Twitter Card meta tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Quick & Easy Plumbing - Mobile, Alabama" />
+        <meta name="twitter:description" content="Professional plumbing services in Mobile, Alabama. Quick & Easy Plumbing - 5★ Google reviews. Call (251) 895-9172" />
+        <meta name="twitter:image" content="https://lh3.googleusercontent.com/p/AF1QipOZ8O4INdIUxeYhd6Q9YdGG_-Hxj1dcEZ1wg26w=w141-h176-n-k-no-nu" />
       </Head>
 
       <nav className={styles.navbar}>

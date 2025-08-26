@@ -157,17 +157,6 @@ const Home: NextPage = () => {
                 service with transparent communication. We're committed to keeping your home's 
                 plumbing system running smoothly and efficiently, giving you complete peace of mind.
               </p>
-              <div className={styles.aboutFeatures}>
-                <div className={styles.feature}>
-                  <span>Expert Repairs & Installations</span>
-                </div>
-                <div className={styles.feature}>
-                  <span>Complete Home Remodels</span>
-                </div>
-                <div className={styles.feature}>
-                  <span>Fast & Reliable Service</span>
-                </div>
-              </div>
             </div>
             <div className={styles.aboutImage}>
               <img 

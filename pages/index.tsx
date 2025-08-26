@@ -48,9 +48,9 @@ const Home: NextPage = () => {
       <nav className={styles.navbar}>
         <div className={styles.navContainer}>
           <div className={styles.logoSection} onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
-            <img 
-              src="https://lh3.googleusercontent.com/p/AF1QipOZ8O4INdIUxeYhd6Q9YdGG_-Hxj1dcEZ1wg26w=w141-h176-n-k-no-nu" 
-              alt="Quick & Easy Plumbing Logo" 
+            <img
+              src="https://lh3.googleusercontent.com/p/AF1QipOZ8O4INdIUxeYhd6Q9YdGG_-Hxj1dcEZ1wg26w=w141-h176-n-k-no-nu"
+              alt="Quick & Easy Plumbing Logo"
               className={styles.logo}
             />
             <div className={styles.logoText}>
@@ -62,7 +62,7 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          <button 
+          <button
             className={styles.hamburger}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
@@ -152,9 +152,9 @@ const Home: NextPage = () => {
               </p>
             </div>
             <div className={styles.aboutImage}>
-              <img 
-                src="https://lh3.googleusercontent.com/p/AF1QipNpiE_fnWWM1IvjPkqzPAz_YkoFivDpJjTZsAAE=s680-w680-h510-rw" 
-                alt="Professional plumber at work" 
+              <img
+                src="https://lh3.googleusercontent.com/p/AF1QipNpiE_fnWWM1IvjPkqzPAz_YkoFivDpJjTZsAAE=s680-w680-h510-rw"
+                alt="Professional plumber at work"
                 className={styles.aboutImg}
               />
             </div>
@@ -166,6 +166,15 @@ const Home: NextPage = () => {
         <div className={styles.servicesContainer}>
           <h2 className={styles.servicesTitle}>Our Services</h2>
           <p className={styles.servicesSubtitle}>Complete plumbing solutions for your home</p>
+
+          {/* Search bar for services */}
+          <div className={styles.searchBarContainer}>
+            <input
+              type="text"
+              placeholder="Search for your service..."
+              className={styles.searchInput}
+            />
+          </div>
 
           <div className={styles.servicesGrid}>
             <div className={styles.serviceItem}>
@@ -197,6 +206,12 @@ const Home: NextPage = () => {
               <h3>Sewer & Drain</h3>
               <p>Complete sewer line and drainage system solutions</p>
             </div>
+          </div>
+
+          <div className={styles.readMoreContainer}>
+            <button className={styles.readMoreBtn}>
+              Read More - Coming Soon!
+            </button>
           </div>
         </div>
       </section>
@@ -241,7 +256,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className={styles.reviewsButtonContainer}>
-            <a 
+            <a
               href="https://www.google.com/search?q=quick+and+easy+plumbing+mobile+al&rlz=1CAGXWE_enUS1166&oq=quick+and+&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIKCAEQLhixAxiABDIGCAIQRRhAMgYIAxBFGDkyBwgEEAAYgAQyEAgFEC4YrwEYxwEYgAQYjgUyBwgGEAAYgAQyBggHEEUYPNIBCDQ2NzdqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#lrd=0x22710e6d2bda2d21:0x4ed56e8bbf32a5a5,1,,,,"
               target="_blank"
               rel="noopener noreferrer"
@@ -253,43 +268,26 @@ const Home: NextPage = () => {
         </div>
       </section>
 
-      <section className={styles.serviceAreaSection}>
-        <div className={styles.serviceAreaContainer}>
-          <h2 className={styles.serviceAreaTitle}>Service Areas</h2>
-          <p className={styles.serviceAreaSubtitle}>Proudly serving Mobile County and surrounding areas</p>
-
-          <div className={styles.serviceAreaContent}>
-            <div className={styles.serviceAreaInfo}>
-              <div className={styles.cityGrid}>
-                <div className={styles.cityCard}>
-                  <h3>Mobile</h3>
-                  <p>Downtown, Midtown, Spring Hill</p>
-                </div>
-                <div className={styles.cityCard}>
-                  <h3>Eastern Shore</h3>
-                  <p>Daphne, Spanish Fort, Fairhope</p>
-                </div>
-                <div className={styles.cityCard}>
-                  <h3>West Mobile</h3>
-                  <p>Tillmans Corner, Theodore</p>
-                </div>
-                <div className={styles.cityCard}>
-                  <h3>North Mobile</h3>
-                  <p>Saraland, Satsuma, Chickasaw</p>
-                </div>
-              </div>
-            </div>
-            <div className={styles.mapContainer}>
-              <iframe
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJe6jp7mNRZm-dAGFAMrSSADU5KwD0vtc&q=Quick+and+Easy+Plumbing,Mobile,AL&zoom=11"
-                width="100%"
-                height="400"
-                style={{ border: 0, borderRadius: '15px' }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Quick & Easy Plumbing Service Area Map"
-              ></iframe>
+      <section className={styles.mapSection}>
+        <div className={styles.mapContainer}>
+          <h2 className={styles.mapTitle}>Our Service Area</h2>
+          <iframe
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDJe6jp7mNRZm-dAGFAMrSSADU5KwD0vtc&q=Quick+and+Easy+Plumbing,Mobile,AL&zoom=11"
+            width="100%"
+            height="400"
+            style={{ border: 0, borderRadius: '15px' }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Quick & Easy Plumbing Service Area Map"
+          ></iframe>
+          <div className={styles.galleryContainer}>
+            <h2 className={styles.galleryTitle}>Gallery</h2>
+            <div className={styles.galleryGrid}>
+              <img src="https://via.placeholder.com/300" alt="Gallery Image 1" className={styles.galleryImage} />
+              <img src="https://via.placeholder.com/300" alt="Gallery Image 2" className={styles.galleryImage} />
+              <img src="https://via.placeholder.com/300" alt="Gallery Image 3" className={styles.galleryImage} />
+              <img src="https://via.placeholder.com/300" alt="Gallery Image 4" className={styles.galleryImage} />
             </div>
           </div>
         </div>
@@ -333,48 +331,48 @@ const Home: NextPage = () => {
               <form className={styles.form}>
                 <div className={styles.formRow}>
                   <div className={styles.formGroup}>
-                    <input 
-                      type="text" 
-                      placeholder="First Name*" 
+                    <input
+                      type="text"
+                      placeholder="First Name*"
                       className={styles.formInput}
-                      required 
+                      required
                     />
                   </div>
                   <div className={styles.formGroup}>
-                    <input 
-                      type="text" 
-                      placeholder="Last Name*" 
+                    <input
+                      type="text"
+                      placeholder="Last Name*"
                       className={styles.formInput}
-                      required 
+                      required
                     />
                   </div>
                 </div>
 
                 <div className={styles.formRow}>
                   <div className={styles.formGroup}>
-                    <input 
-                      type="tel" 
-                      placeholder="Phone Number*" 
+                    <input
+                      type="tel"
+                      placeholder="Phone Number*"
                       className={styles.formInput}
-                      required 
+                      required
                     />
                   </div>
                   <div className={styles.formGroup}>
-                    <input 
-                      type="email" 
-                      placeholder="Email Address*" 
+                    <input
+                      type="email"
+                      placeholder="Email Address*"
                       className={styles.formInput}
-                      required 
+                      required
                     />
                   </div>
                 </div>
 
                 <div className={styles.formGroup}>
-                  <input 
-                    type="text" 
-                    placeholder="Property Address*" 
+                  <input
+                    type="text"
+                    placeholder="Property Address*"
                     className={styles.formInput}
-                    required 
+                    required
                   />
                 </div>
 
@@ -392,8 +390,8 @@ const Home: NextPage = () => {
                 </div>
 
                 <div className={styles.formGroup}>
-                  <textarea 
-                    placeholder="Describe your plumbing needs in detail*" 
+                  <textarea
+                    placeholder="Describe your plumbing needs in detail*"
                     className={styles.formTextarea}
                     rows={5}
                     required
@@ -427,9 +425,9 @@ const Home: NextPage = () => {
         <div className={styles.footerContainer}>
           <div className={styles.footerContent}>
             <div className={styles.footerSection}>
-              <img 
-                src="https://lh3.googleusercontent.com/p/AF1QipOZ8O4INdIUxeYhd6Q9YdGG_-Hxj1dcEZ1wg26w=w141-h176-n-k-no-nu" 
-                alt="Quick & Easy Plumbing Logo" 
+              <img
+                src="https://lh3.googleusercontent.com/p/AF1QipOZ8O4INdIUxeYhd6Q9YdGG_-Hxj1dcEZ1wg26w=w141-h176-n-k-no-nu"
+                alt="Quick & Easy Plumbing Logo"
                 className={styles.footerLogo}
               />
               <h3>Quick & Easy Plumbing</h3>

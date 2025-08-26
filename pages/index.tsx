@@ -48,14 +48,14 @@ const Home: NextPage = () => {
       <nav className={styles.navbar}>
         <div className={styles.navContainer}>
           <div className={styles.logoSection} onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
-            <img 
-              src="https://lh3.googleusercontent.com/p/AF1QipOZ8O4INdIUxeYhd6Q9YdGG_-Hxj1dcEZ1wg26w=w141-h176-n-k-no-nu" 
-              alt="Quick & Easy Plumbing Logo" 
-              className={styles.logo}
-            />
             <div className={styles.logoText}>
-              <div className={styles.companyName}>Quick & Easy Plumbing</div>
               <div className={styles.rating}>★★★★★</div>
+              <img 
+                src="https://lh3.googleusercontent.com/p/AF1QipOZ8O4INdIUxeYhd6Q9YdGG_-Hxj1dcEZ1wg26w=w141-h176-n-k-no-nu" 
+                alt="Quick & Easy Plumbing Logo" 
+                className={styles.logo}
+              />
+              <div className={styles.companyName}>Quick & Easy Plumbing</div>
               <div className={styles.mobileInfo}>
                 <div className={styles.phoneNumber}>(251) 895-9172</div>
               </div>

@@ -13,7 +13,7 @@
   backdrop-filter: blur(20px);
   border-bottom: 2px solid rgba(59, 130, 246, 0.2);
   z-index: 1000;
-  padding: 0.5rem 0;
+  padding: 0.75rem 0;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
@@ -31,13 +31,11 @@
 
 .logoSection {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
   position: relative;
   cursor: pointer;
   transition: all 0.3s ease;
-  justify-self: center;
 }
 
 .logoSection:hover {
@@ -45,12 +43,13 @@
 }
 
 .logo {
-  height: 100px;
+  height: 60px;
   width: auto;
-  border-radius: 15px;
-  box-shadow: 0 6px 25px rgba(59, 130, 246, 0.4);
-  border: 3px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.15);
   transition: all 0.3s ease;
+  margin: 0.2rem 0;
 }
 
 .logo:hover {
@@ -65,6 +64,7 @@
   align-items: center;
   text-align: center;
   gap: 0.2rem;
+  padding: 0 1rem;
 }
 
 .companyName {
@@ -115,11 +115,11 @@
   color: #e2e8f0;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   transition: all 0.3s ease;
   position: relative;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
   letter-spacing: 0.3px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -200,10 +200,10 @@
   background: linear-gradient(135deg, #3b82f6, #1d4ed8);
   color: white;
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   transition: all 0.3s ease;
   box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
   border: 2px solid rgba(255, 255, 255, 0.1);

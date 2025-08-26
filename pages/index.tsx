@@ -55,7 +55,7 @@ const Home: NextPage = () => {
             />
             <div className={styles.logoText}>
               <div className={styles.companyName}>Quick & Easy Plumbing</div>
-              <div className={styles.rating}>★★★★★ Google</div>
+              <div className={styles.rating}>★★★★★</div>
               <div className={styles.mobileInfo}>
                 <div className={styles.phoneNumber}>(251) 895-9172</div>
               </div>
@@ -100,6 +100,8 @@ const Home: NextPage = () => {
               </div>
             </div>
             <a href="#about" className={styles.navLink}>About</a>
+            <a href="#contact" className={styles.navLink}>Contact</a>
+            <a href="tel:(251)895-9172" className={styles.phoneButton}>Call (251) 895-9172</a>
           </div>
         </div>
       </nav>
